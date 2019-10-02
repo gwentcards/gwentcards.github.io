@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "GwentCards",
+  "name": "The Witcher 3 Gwent Cards Overview",
   "icons": [
     {
       "src": "favicon.ico",
