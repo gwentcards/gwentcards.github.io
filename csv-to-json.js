@@ -27,7 +27,7 @@ fs.readFile('cards.csv', 'utf8', (err, data) => {
     }
     console.log(`Parsed ${arr.length} rows`);
 
-    fs.writeFile('cards.json', JSON.stringify(arr, null, 2), err => {
+    fs.writeFile('src/data/cards.json', JSON.stringify({cards: arr}, null, 2), err => {
         if (err) {
             console.error('Unable to write JSON data to cards.json', err);
         } else {

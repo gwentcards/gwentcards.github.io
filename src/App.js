@@ -1,42 +1,35 @@
 import React from 'react';
 import './App.css';
-import { Table } from 'reactstrap';
+import {Table} from 'reactstrap';
+import cards from './data/cards';
 
 function App() {
-  return (
-    <div className="App">
-        <Table bordered hover striped responsive>
-            <thead>
-            <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
-            </tbody>
-        </Table>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Table bordered hover striped responsive>
+                <thead>
+                <tr>
+                    <th>Deck</th>
+                    <th>Territory</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Details</th>
+                </tr>
+                </thead>
+                <tbody>
+                {cards.cards.map(c =>
+                    <tr>
+                        <td>{c.deck}</td>
+                        <td>{c.territory}</td>
+                        <td>{c.name}</td>
+                        <td>{c.location}</td>
+                        <td>{c.details}</td>
+                    </tr>
+                )}
+                </tbody>
+            </Table>
+        </div>
+    );
 }
 
 export default App;

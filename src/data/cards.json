@@ -1,0 +1,1362 @@
+{
+  "cards": [
+    {
+      "deck": "Monsters",
+      "territory": "Velen",
+      "name": "Crone Weavess",
+      "location": "Gwent Quest",
+      "details": "Seer (Old Sage), Benek"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Velen",
+      "name": "Eredin Bringer of Death",
+      "location": "Gwent Quest",
+      "details": "Reward for completing this quest"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Arachas (1 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Arinbjorn"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Arachas (2 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Urialla Village, An Skellig"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Arachas (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Svorlag, Spikeroog"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Botchling",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, New Port Inn, Kaer Trolde Harbor"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Crone Whispess",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Arinbjorn"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Earth Elemental",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, New Port Inn, Kaer Trolde Harbor"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Fiend",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Arinbjorn"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Foglet",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Svorlag, Spikeroog"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Ghoul (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Harviken tavern, Faroe"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Harpy",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Harviken tavern, Faroe"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Ice Giant",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Svorlag, Spikeroog"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Nekker (2 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Harviken tavern, Faroe"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Vampire Ekimmara",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Svorlag, Spikeroog"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Vampire Fleder",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Harviken tavern, Faroe"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Werewolf",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Urialla Village, An Skellig"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Eredin King of the Wild Hunt",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, New Port Inn, Kaer Trolde Harbor"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Vampire Katakan",
+      "location": "Gwent Quest",
+      "details": "Jarl Madman Lugos, Kaer Muire, Ard Skellig"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Draug",
+      "location": "Gwent Quest",
+      "details": "Crach an Craite, Kaer Trolde, Ard Skellig"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Leshen",
+      "location": "Gwent Quest",
+      "details": "Ermion, Gedyneith, Ard Skellig"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Skellige",
+      "name": "Nekker (1 of 3)",
+      "location": "Secondary Quest",
+      "details": "Looting Hammonds corpse on Trottheim (Skelllige)"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Arachas Behemoth",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Celaeno Harpy",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Cockatrice",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Crone Brewess",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Endrega",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Fire Elemental",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Forktail",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Frightener",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Gargoyle",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Ghoul (1 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Ghoul (2 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Grave Hag",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Griffin",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Nekker (3 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Plague Maiden",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Vampire Garkain",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Wyvern",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Imlerith",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Random",
+      "name": "Kayran",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Vampire Bruxa",
+      "location": "Secondary Quest",
+      "details": "Win a match at the masquerade ball at Vegelbud Estate (A .."
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Novigrad",
+      "name": "Eredin Destroyer of Worlds",
+      "location": "Secondary Quest",
+      "details": "Quest, Passiflora"
+    },
+    {
+      "deck": "Monsters",
+      "territory": "Geralt of Rivia",
+      "name": "Eredin Commander of the Red Riders",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "White Orchard",
+      "name": "Decoy (1 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeperess, White Orchard Tavern (or Trader outside)"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "White Orchard",
+      "name": "Zoltan Chivay",
+      "location": "Win From Gwent Teacher",
+      "details": "First Gwent game"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Velen",
+      "name": "Commander's Horn (1 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Crossroads Inn"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Velen",
+      "name": "Decoy (2 of 3)",
+      "location": "Buy from Trader",
+      "details": "Quartermaster's Baron's Store, Crow's Perch"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Skellige",
+      "name": "Scorch (2 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, New Port Inn, Kaer Trolde Harbor"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Skellige",
+      "name": "Scorch (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Urialla Village, An Skellig"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Skellige",
+      "name": "Avallac'h (A.K.A Mysterious Elf)",
+      "location": "Gwent Quest",
+      "details": "Gremita, Gedyneith, Ard Skellig"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Random",
+      "name": "Emiel Regis Rohellec Terzieff",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Random",
+      "name": "Villentretenmerth",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Random",
+      "name": "Biting Frost (3 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Random",
+      "name": "Clear Weather (2 of 2)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Random",
+      "name": "Impenetrable Fog (3 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Random",
+      "name": "Torrential Rain (2 of 2)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad (Oxenfurt)",
+      "name": "Commander's Horn (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Stjepan, The Alchemy Inn, Oxenfurt"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad (Oxenfurt)",
+      "name": "Yennefer of Vengerberg",
+      "location": "Gwent Quest             ",
+      "details": "Stjepan, The Alchemy Inn, Oxenfurt"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Decoy (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Seven Cats Inn"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Dandelion",
+      "location": "Secondary Quest",
+      "details": "Win a match at the masquerade ball at Vegelbud Estate (A matter of life and death quest)"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad (Grassy Knoll)",
+      "name": "Scorch (1 of 3)",
+      "location": "Buy from Trader       ",
+      "details": " Innkeeper, Cunny of the Goose"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad (Grassy Knoll)",
+      "name": "Cirilla Fiona Elen Rianno",
+      "location": "Gwent Quest",
+      "details": "Scoia’Tael Trader and Camp, Novigrad Forest"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad",
+      "name": "Commander's Horn (2 of 3)",
+      "location": "Buy from Trader",
+      "details": "Marquise Serenity in Passiflora"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad",
+      "name": "Geralt of Rivia",
+      "location": "Gwent Quest",
+      "details": "Thaler at the Seven Cats Inn"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad",
+      "name": "Triss Merigold",
+      "location": "Gwent Quest",
+      "details": " Lambert, The Nowhere Inn or at Kaer Morhen after Following the Thread Quest"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Novigrad",
+      "name": "Vesemir",
+      "location": "Gwent Quest             ",
+      "details": "Vivaldi, Bank of Vivaldi, Hierarch Square"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Geralt of Rivia",
+      "name": "Biting Frost (1 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Geralt of Rivia",
+      "name": "Biting Frost (2 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Geralt of Rivia",
+      "name": "Clear Weather (1 of 2)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Geralt of Rivia",
+      "name": "Impenetrable Fog (1 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Geralt of Rivia",
+      "name": "Impenetrable Fog (2 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Geralt of Rivia",
+      "name": "Torrential Rain (1 of 2)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Albrich",
+      "location": "Buy from Trader",
+      "details": "Trader, Crow's Perch"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Black Infantry Archer (1 of 2)",
+      "location": "Buy from Trader",
+      "details": "Trader, Claywich Village (Rescue Trader first, See Notes)"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Black Infantry Archer (2 of 2)",
+      "location": "Buy from Trader",
+      "details": "Merchant, Lindenvale (See Notes)"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Cynthia",
+      "location": "Buy from Trader",
+      "details": "Quartermaster's Baron's Store, Crow's Perch"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Etolian Auxiliary Archers (1 of 2)",
+      "location": "Buy from Trader",
+      "details": "Merchant, Lindenvale (See Notes)"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Etolian Auxiliary Archers (2 of 2)",
+      "location": "Buy from Trader",
+      "details": "Trader, Claywich Village (Rescue Trader first, See Notes)"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Heavy Zerrikanian Fire Scorpion",
+      "location": "Buy from Trader",
+      "details": "Merchant, Lindenvale (See Notes)"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Impera Brigade Guard (1 of 4)",
+      "location": "Buy from Trader",
+      "details": "Trader, Crow's Perch"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Impera Brigade Guard (2 of 4)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Crossroads Inn"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Morteisen",
+      "location": "Buy from Trader",
+      "details": "Shopkeeper, Midcopse"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Nausicaa Cavalry Rider (1 of 3)",
+      "location": "Buy from Trader",
+      "details": "Quartermaster's Baron's Store, Crow's Perch"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Nausicaa Cavalry Rider (2 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Crossroads Inn"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Nausicaa Cavalry Rider (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Trader, Crow's Perch"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Puttkammer",
+      "location": "Buy from Trader",
+      "details": "Trader, Claywich Village (Rescue Trader first, See Notes)"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Rainfarn",
+      "location": "Buy from Trader",
+      "details": "Merchant, Lindenvale (See Notes)"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Siege Engineer",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Crossroads Inn"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Sweers",
+      "location": "Buy from Trader",
+      "details": "Trader, Claywich Village (Rescue Trader first, See Notes)"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Zerrikanian Fire Scorpion",
+      "location": "Buy from Trader",
+      "details": "Trader, Crow's Perch"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Emhyr var Emreis Emperor of Nilfgaard",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Crossroads Inn"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Letho of Gulet",
+      "location": "Gwent Quest",
+      "details": "The Boatbuilder in Oreton"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Menno Coehoorn",
+      "location": "Gwent Quest",
+      "details": "Innkeeper, Crossroads Inn"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Velen",
+      "name": "Assire var Anahid",
+      "location": "Win from crafter or Merchant",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Skellige",
+      "name": "Emhry var Emrels the White Flame",
+      "location": "Gwent Quest",
+      "details": "Reward for completing Quest"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Random",
+      "name": "Cahir Mawr Dyffryn aep Ceallach",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Random",
+      "name": "Renuald aep Matsen",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Random",
+      "name": "Rotten Mangonel",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Random",
+      "name": "Shilard Fitz-Oesterlen",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Random",
+      "name": "Stefan Skellen",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Random",
+      "name": "Vanhemar",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Random",
+      "name": "Vattier de Rideaux",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Random",
+      "name": "Vreemde",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Novigrad (Gust Fields)",
+      "name": "Impera Brigade Guard (3 of 4)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Seven Cats Inn"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Novigrad (Gust Fields)",
+      "name": "Young Emissary (2 of 2)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Seven Cats Inn"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Novigrad (Grassy Knol)",
+      "name": "Impera Brigade Guard (4 of 4)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Cunny of the Goose"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Novigrad (Grassy Knol)",
+      "name": "Young Emissary (1 of 2)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Cunny of the Goose"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Novigrad",
+      "name": "Siege Technician",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Golden Sturgeon"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Novigrad",
+      "name": "Morvran Voorhis",
+      "location": "Gwent Quest",
+      "details": "Marquise Serenity in Passiflora"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Novigrad",
+      "name": "Tibor Eggebracht",
+      "location": "Gwent Quest",
+      "details": "Olivier, Kingfisher Inn"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Novigrad",
+      "name": "Fringilla Vigo",
+      "location": "Secondary Quest",
+      "details": "At Caesar Bilzen's home while on a quest"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Novigrad",
+      "name": "Emhyr var Emreis the Relentless",
+      "location": "Secondary Quest",
+      "details": "Quest, Passiflora"
+    },
+    {
+      "deck": "Nilfgaard",
+      "territory": "Geralt of Rivia",
+      "name": "Emhry var Emrels His Imperial Majesty",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "White Orchard",
+      "name": "Blue Stripes Commando (1 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeperess, White Orchard Tavern (or Trader outside)"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "White Orchard",
+      "name": "Catapult (1 of 2)",
+      "location": "Buy from Trader",
+      "details": "Innkeeperess, White Orchard Tavern (or Trader outside)"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "White Orchard",
+      "name": "Crinfrid Reavers Dragon Hunter (1 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeperess, White Orchard Tavern (or Trader outside)"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "White Orchard",
+      "name": "Foltest Lord Commander of the North",
+      "location": "Buy from Trader",
+      "details": "Innkeeperess, White Orchard Tavern (or Trader outside)"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Velen",
+      "name": "Crinfrid Reavers Dragon Hunter (2 of 3)",
+      "location": "Buy from Trader",
+      "details": "Trader, Claywich Village (Rescue Trader first, See Notes)"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Velen",
+      "name": "Crinfrid Reavers Dragon Hunter (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Shopkeeper,  Midcopse"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Velen",
+      "name": "Poor Fucking Infantry (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Merchant, Lindenvale (See Notes)"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Velen",
+      "name": "Sigismund Dijkstra",
+      "location": "Gwent Quest",
+      "details": "Bloody Baron, Phillip Strenger, Crow’s Perch"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Velen",
+      "name": "Vernon Roche",
+      "location": "Gwent Quest",
+      "details": "Hadko the Card Prodigy, Midcopse"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Skellige",
+      "name": "Thaler",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Arinbjorn"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Random",
+      "name": "Siege Tower",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Random",
+      "name": "Philippa Eilhart",
+      "location": "Win from NPC",
+      "details": "Randomly Earned"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Palace of Vizima",
+      "name": "Foltest the Siegemaster",
+      "location": "Vizima Palace Couryard",
+      "details": "Beat Nilfgaardian Nobleman"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Novigrad",
+      "name": "Catapult (2 of 2)",
+      "location": "Buy from Trader",
+      "details": "Marquise Serenity in Passiflora"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Novigrad",
+      "name": "Esterad Thyssen",
+      "location": "Gwent Quest",
+      "details": "Dijkstra, Bathhouse"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Novigrad",
+      "name": "John Natalis",
+      "location": "Secondary Quest",
+      "details": "Ravvy, Golden Sturgeon Tavern"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Novigrad",
+      "name": "Foltest the Steel-Forged",
+      "location": "Secondary Quest",
+      "details": "Quest, Passiflora"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Blue Stripes Commando (2 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Blue Stripes Commando (3 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Dethmold",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Dun Banner Medic",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Kaedweni Siege Expert (1 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Kaedweni Siege Expert (2 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Kaedweni Siege Expert (3 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Keira Metz",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Poor Fucking Infantry (1 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Poor Fucking Infantry (2 of 3)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Prince Stennis",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Redanian Foot Soldier (1 of 2)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Redanian Foot Soldier (2 of 2)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Sabrina Glevissig",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Sheldon Skaggs",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Siegfried of Denesle",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "S?l? e de Tansarville",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Trebuchet (1 of 2)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Trebuchet (2 of 2)",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Ves",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Yarpen Zigrin",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Norther Realms",
+      "territory": "Geralt of Rivia",
+      "name": "Foltest King of Temeria",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Skellige",
+      "name": "Elven Skirmisher (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Urialla Village, An Skellig"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Skellige",
+      "name": "Yaevinn",
+      "location": "Gwent Quest",
+      "details": "Sjusta the Tailor, Kaer Trolde Harbor, Ard Skellig"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Skellige",
+      "name": "Iorveth",
+      "location": "Secondary Quest   ",
+      "details": "Druid after the quest, in Gedyneith, Ard Skellig"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Ciaran aep Easnillien",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Dennis Cranmer",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Dol Blathanna Scout (1 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Dol Blathanna Scout (2 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Dwarven Skirmisher (1 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Dwarven Skirmisher (2 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Elven Skirmisher (1 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Elven Skirmisher (2 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Filavandrel aen Fidhail",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Havekar Healer (1 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Havekar Smuggler (2 of 3)",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Ida Emean aep Sivney",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Riordain",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Toruviel",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Random",
+      "name": "Vrihedd Brigade Recruit",
+      "location": "Win from NPC",
+      "details": "Randomly earned"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Oxenfurt)",
+      "name": "Dwarven Skirmisher (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Stjepan, The Alchemy Inn, Oxenfurt"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Oxenfurt)",
+      "name": "Mahakaman Defender (4 of 5)",
+      "location": "Buy from Trader",
+      "details": "Stjepan, The Alchemy Inn, Oxenfurt"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Oxenfurt)",
+      "name": "Vrihedd Brigade Veteran (1 of 2)",
+      "location": "Buy from Trader",
+      "details": "Stjepan, The Alchemy Inn, Oxenfurt"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Havekar Smuggler (1 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Seven Cats Inn"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Mahakaman Defender (3 of 5)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Seven Cats Inn"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Saesenthessis",
+      "location": "Gwent Quest",
+      "details": "Vernon Roche, Temerian Resistance Camp"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Milva",
+      "location": "Secondary Quest",
+      "details": "Win a match at the masquerade ball at Vegelbud Estate (A .."
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Grassy Knoll)",
+      "name": "Francesca Findabair Daisy of The Valley",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Cunny of the Goose"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Grassy Knoll)",
+      "name": "Havekar Healer (2 of 3)",
+      "location": "Buy from Trader        ",
+      "details": "Innkeeper, Cunny of the Goose"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": "Geralt of Rivia",
+      "name": "Francesca Findabair Pureblood Elf",
+      "location": "Base Deck",
+      "details": "Included at start of game"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Barclay Els",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Golden Sturgeon"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Dol Blathanna Archer",
+      "location": "Buy from Trader",
+      "details": "Marquise Serenity in Passiflora"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Dol Blathanna Scout (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Golden Sturgeon"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Havekar Healer (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Olivier, Kingfisher Inn"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Havekar Smuggler (3 of 3)",
+      "location": "Buy from Trader",
+      "details": "Olivier, Kingfisher Inn"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Mahakaman Defender (1 of 5)",
+      "location": "Buy from Trader",
+      "details": "Olivier, Kingfisher Inn"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Mahakaman Defender (2 of 5)",
+      "location": "Buy from Trader",
+      "details": "Innkeeper, Golden Sturgeon"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Mahakaman Defender (5 of 5)",
+      "location": "Buy from Trader",
+      "details": "Marquise Serenity in Passiflora"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Vrihedd Brigade Veteran (2 of 2)",
+      "location": "Buy from Trader",
+      "details": "Olivier, Kingfisher Inn"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Eithne?",
+      "location": "Gwent Quest",
+      "details": "Zoltan, Rosemary and Thyme (Starts Gwent: Old Pals quest)"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Francesca Findabair the Beautiful",
+      "location": "Gwent Quest",
+      "details": "Reward for completing this quest"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Isengrim Faolitarna",
+      "location": "Secondary Quest",
+      "details": "Inside Zed's home during a quest"
+    },
+    {
+      "deck": "Scoia'tael",
+      "territory": " Novigrad",
+      "name": "Francesca Findabair Queen of Dol Blath..",
+      "location": "Secondary Quest",
+      "details": "Quest, Passiflora"
+    }
+  ]
+}
