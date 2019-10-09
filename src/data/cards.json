@@ -292,7 +292,7 @@
       "territory": "Novigrad (Gustfields)",
       "name": "Vampire Bruxa",
       "location": "Secondary Quest",
-      "details": "Win a match at the masquerade ball at Vegelbud Estate (A .."
+      "details": "Win a match at the masquerade ball at Vegelbud Estate (A Matter of Life and Death Quest)"
     },
     {
       "deck": "Monsters",
@@ -668,7 +668,7 @@
     {
       "deck": "Nilfgaard",
       "territory": "Skellige",
-      "name": "Emhry var Emrels the White Flame",
+      "name": "Emhyr var Emreis the White Flame",
       "location": "Gwent Quest",
       "details": "Reward for completing Quest"
     },
@@ -794,7 +794,7 @@
     {
       "deck": "Nilfgaard",
       "territory": "Geralt of Rivia",
-      "name": "Emhry var Emrels His Imperial Majesty",
+      "name": "Emhyr var Emreis His Imperial Majesty",
       "location": "Base Deck",
       "details": "Included at start of game"
     },
@@ -1032,7 +1032,7 @@
     {
       "deck": "Northern Realms",
       "territory": "Geralt of Rivia",
-      "name": "S?l? e de Tansarville",
+      "name": "Síle de Tansarville",
       "location": "Base Deck",
       "details": "Included at start of game"
     },
@@ -1244,7 +1244,7 @@
       "territory": "Novigrad (Gustfields)",
       "name": "Milva",
       "location": "Secondary Quest",
-      "details": "Win a match at the masquerade ball at Vegelbud Estate (A .."
+      "details": "Win a match at the masquerade ball at Vegelbud Estate (A Matter of Life and Death Quest)"
     },
     {
       "deck": "Scoia'tael",
@@ -1269,92 +1269,92 @@
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Barclay Els",
       "location": "Buy from Trader",
       "details": "Innkeeper, Golden Sturgeon"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Dol Blathanna Archer",
       "location": "Buy from Trader",
       "details": "Marquise Serenity in Passiflora"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Dol Blathanna Scout (3 of 3)",
       "location": "Buy from Trader",
       "details": "Innkeeper, Golden Sturgeon"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Havekar Healer (3 of 3)",
       "location": "Buy from Trader",
       "details": "Olivier, Kingfisher Inn"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Havekar Smuggler (3 of 3)",
       "location": "Buy from Trader",
       "details": "Olivier, Kingfisher Inn"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Mahakaman Defender (1 of 5)",
       "location": "Buy from Trader",
       "details": "Olivier, Kingfisher Inn"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Mahakaman Defender (2 of 5)",
       "location": "Buy from Trader",
       "details": "Innkeeper, Golden Sturgeon"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Mahakaman Defender (5 of 5)",
       "location": "Buy from Trader",
       "details": "Marquise Serenity in Passiflora"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Vrihedd Brigade Veteran (2 of 2)",
       "location": "Buy from Trader",
       "details": "Olivier, Kingfisher Inn"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
-      "name": "Eithne?",
+      "territory": "Novigrad",
+      "name": "Eithné",
       "location": "Gwent Quest",
       "details": "Zoltan, Rosemary and Thyme (Starts Gwent: Old Pals quest)"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Francesca Findabair the Beautiful",
       "location": "Gwent Quest",
       "details": "Reward for completing this quest"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
+      "territory": "Novigrad",
       "name": "Isengrim Faolitarna",
       "location": "Secondary Quest",
       "details": "Inside Zed's home during a quest"
     },
     {
       "deck": "Scoia'tael",
-      "territory": " Novigrad",
-      "name": "Francesca Findabair Queen of Dol Blath..",
+      "territory": "Novigrad",
+      "name": "Francesca Findabair Queen of Dol Blathanna",
       "location": "Secondary Quest",
       "details": "Quest, Passiflora"
     }
