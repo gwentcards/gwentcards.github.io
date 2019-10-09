@@ -17,6 +17,7 @@ class App extends React.Component {
         this.updateFilter = this.updateFilter.bind(this);
         this.clearFilter = this.clearFilter.bind(this);
         this.updateSort = this.updateSort.bind(this);
+        this.checkAll = this.checkAll.bind(this);
     }
 
     static parseHash(hash) {
@@ -78,6 +79,17 @@ class App extends React.Component {
         this.setState(state => {
             return {checked: {...state.checked, ...{[name]: !checked}}};
         });
+    }
+
+    checkAll(check) {
+        const filtered = this.filteredCards();
+        this.setState(state => {
+            const checked = {...state.checked};
+            for (const f of filtered) {
+                checked[f.name] = check;
+            }
+            return {checked: checked};
+        })
     }
 
     isChecked(name) {
@@ -173,7 +185,7 @@ class App extends React.Component {
         return <Progress striped bar color={color} max={total} value={c.collected}>{deck} {App.printCardCount(c)}</Progress>
     }
 
-    render() {
+    filteredCards() {
         const f = this.state.filter;
         const collected = f.collected || 'all';
         const deck = f.deck || 'all';
@@ -182,7 +194,7 @@ class App extends React.Component {
         const location = (f.location || '').trim().toLocaleLowerCase();
         const details = (f.details || '').trim().toLocaleLowerCase();
 
-        const filtered = cards.cards.filter(c => {
+        return cards.cards.filter(c => {
             const name = c.name;
             if (collected === 'yes') {
                 return this.isChecked(name);
@@ -201,6 +213,11 @@ class App extends React.Component {
             .filter(c => App.containsFilter(c.name, name))
             .filter(c => App.containsFilter(c.location, location))
             .filter(c => App.containsFilter(c.details, details));
+    }
+
+    render() {
+        const f = this.state.filter;
+        const filtered = this.filteredCards();
 
         const sort = this.state.sort;
         const sortField = sort.field;
@@ -211,15 +228,21 @@ class App extends React.Component {
         const totalCount = cards.cards.length;
 
         return (
-            <div className="App form-group">
-                <Progress multi max={cards.cards.length}>
-                    {App.progress(totalCount, counts, 'Nilfgaard', 'warning')}
-                    {App.progress(totalCount, counts, 'Monsters', 'danger')}
-                    {App.progress(totalCount, counts, 'Northern Realms', 'primary')}
-                    {App.progress(totalCount, counts, 'Scoia\'tael', 'success')}
-                    {App.progress(totalCount, counts, 'Neutral', 'secondary')}
-                </Progress>
-                <Table bordered hover striped responsive size="sm">
+            <div className="App">
+                <div className="space">
+                    <Progress multi max={cards.cards.length}>
+                        {App.progress(totalCount, counts, 'Nilfgaard', 'warning')}
+                        {App.progress(totalCount, counts, 'Monsters', 'danger')}
+                        {App.progress(totalCount, counts, 'Northern Realms', 'primary')}
+                        {App.progress(totalCount, counts, 'Scoia\'tael', 'success')}
+                        {App.progress(totalCount, counts, 'Neutral', 'secondary')}
+                    </Progress>
+                </div>
+                <div className="space">
+                    <Button size="sm" onClick={this.checkAll.bind(this, true)}>Check all visible</Button>{' '}
+                    <Button size="sm" onClick={this.checkAll.bind(this, false)}>Uncheck all visible</Button>
+                </div>
+                <Table bordered hover striped responsive size="sm" className="space">
                     <thead>
                     <tr>
                         <th>
