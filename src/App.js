@@ -12,7 +12,7 @@ class App extends React.Component {
         this.state = {checked: parsed, filter: {}, sort: {field: 'name', dir: 'asc'}};
 
         this.isChecked = this.isChecked.bind(this);
-        this.updateChecked = this.updateChecked.bind(this);
+        this.noop = this.noop.bind(this);
         this.toggleChecked = this.toggleChecked.bind(this);
         this.updateFilter = this.updateFilter.bind(this);
         this.clearFilter = this.clearFilter.bind(this);
@@ -69,14 +69,11 @@ class App extends React.Component {
         }
     }
 
-    updateChecked(name, e) {
-        const checked = e.target.checked;
-        this.setState(state => {
-            return {checked: {...state.checked, ...{[name]: checked}}};
-        });
+    noop() {
     }
 
-    toggleChecked(name) {
+    toggleChecked(name, e) {
+        e.preventDefault(); // Otherwise the click will go to the checkbox, then bubble up to the td, and trigger again
         const checked = this.isChecked(name);
         this.setState(state => {
             return {checked: {...state.checked, ...{[name]: !checked}}};
@@ -222,7 +219,6 @@ class App extends React.Component {
                     {App.progress(totalCount, counts, 'Scoia\'tael', 'success')}
                     {App.progress(totalCount, counts, 'Neutral', 'secondary')}
                 </Progress>
-                {' '}
                 <Table bordered hover striped responsive size="sm">
                     <thead>
                     <tr>
@@ -283,7 +279,11 @@ class App extends React.Component {
                     {filtered.map(c =>
                         <tr id={c.name} key={c.name}>
                             <td className="text-center cursor-pointer" onClick={this.toggleChecked.bind(this, c.name)}>
-                                <CustomInput type="checkbox" className="cursor-pointer" id={'collected-' + c.name} checked={this.isChecked(c.name)} onChange={this.updateChecked.bind(this, c.name)} />
+                                <div className="custom-control custom-checkbox cursor-pointer">
+                                    <input type="checkbox" className="custom-control-input cursor-pointer" id={'collected-' + c.name} checked={this.isChecked(c.name)} onChange={this.noop}/>
+                                    <label className="custom-control-label cursor-pointer" htmlFor={'collected-' + c.name}/>
+                                </div>
+
                             </td>
                             <td>{c.deck}</td>
                             <td>{c.territory}</td>
