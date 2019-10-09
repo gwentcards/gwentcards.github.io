@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Button, Table} from 'reactstrap';
+import {Button, Input, InputGroup, InputGroupAddon, Table} from 'reactstrap';
 import cards from './data/cards';
 
 class App extends React.Component {
@@ -14,6 +14,7 @@ class App extends React.Component {
         this.isChecked = this.isChecked.bind(this);
         this.updateChecked = this.updateChecked.bind(this);
         this.updateFilter = this.updateFilter.bind(this);
+        this.clearFilter = this.clearFilter.bind(this);
         this.updateSort = this.updateSort.bind(this);
     }
 
@@ -70,7 +71,14 @@ class App extends React.Component {
     }
 
     updateFilter(field, e) {
-        const value = e.target.value;
+        this.setFilter(field, e.target.value);
+    }
+
+    clearFilter(field) {
+        this.setFilter(field, '');
+    }
+
+    setFilter(field, value) {
         this.setState(state => {
             return {filter: {...state.filter, [field]: value}};
         });
@@ -188,31 +196,31 @@ class App extends React.Component {
                             {this.sortButton('deck')}
                         </th>
                         <th>
-                            <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Territory"
-                                       onChange={this.updateFilter.bind(this, 'territory')}/>
-                            </div>
+                            <InputGroup size="sm">
+                                <Input bsSize="sm" placeholder="Territory" value={f.territory || ''} onChange={this.updateFilter.bind(this, 'territory')}/>
+                                <InputGroupAddon addonType="append" title="Clear territory filter"><Button onClick={this.clearFilter.bind(this, 'territory')}>x</Button></InputGroupAddon>
+                            </InputGroup>
                             {this.sortButton('territory')}
                         </th>
                         <th>
-                            <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Name"
-                                       onChange={this.updateFilter.bind(this, 'name')}/>
-                            </div>
+                            <InputGroup size="sm">
+                                <Input bsSize="sm" placeholder="Name" value={f.name || ''} onChange={this.updateFilter.bind(this, 'name')}/>
+                                <InputGroupAddon addonType="append" title="Clear name filter"><Button onClick={this.clearFilter.bind(this, 'name')}>x</Button></InputGroupAddon>
+                            </InputGroup>
                             {this.sortButton('name')}
                         </th>
                         <th>
-                            <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Location"
-                                       onChange={this.updateFilter.bind(this, 'location')}/>
-                            </div>
+                            <InputGroup size="sm">
+                                <Input bsSize="sm" placeholder="Location" value={f.location || ''} onChange={this.updateFilter.bind(this, 'location')}/>
+                                <InputGroupAddon addonType="append" title="Clear location filter"><Button onClick={this.clearFilter.bind(this, 'location')}>x</Button></InputGroupAddon>
+                            </InputGroup>
                             {this.sortButton('location')}
                         </th>
                         <th>
-                            <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Details"
-                                       onChange={this.updateFilter.bind(this, 'details')}/>
-                            </div>
+                            <InputGroup size="sm">
+                                <Input bsSize="sm" placeholder="Details" value={f.details || ''} onChange={this.updateFilter.bind(this, 'details')}/>
+                                <InputGroupAddon addonType="append" title="Clear details filter"><Button onClick={this.clearFilter.bind(this, 'details')}>x</Button></InputGroupAddon>
+                            </InputGroup>
                             {this.sortButton('details')}
                         </th>
                     </tr>
