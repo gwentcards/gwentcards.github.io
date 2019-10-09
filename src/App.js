@@ -8,7 +8,7 @@ class App extends React.Component {
         super(props);
 
         const hash = window.location.hash;
-        const parsed = App.parseHash(hash) || {};
+        const parsed = App.parseHash(hash) || App.baseDeckChecked();
         this.state = {checked: parsed, filter: {}, sort: {field: 'name', dir: 'asc'}};
 
         this.isChecked = this.isChecked.bind(this);
@@ -36,6 +36,16 @@ class App extends React.Component {
             const v = hash.charAt(i);
             if (v === '1') {
                 obj[c[i].name] = true;
+            }
+        }
+        return obj;
+    }
+
+    static baseDeckChecked() {
+        const obj = {};
+        for (const c of cards.cards) {
+            if (c.location === 'Base Deck') {
+                obj[c.name] = true;
             }
         }
         return obj;
@@ -180,7 +190,7 @@ class App extends React.Component {
                         <th>
                             <InputGroup size="sm">
                                 <InputGroupAddon addonType="prepend">{this.sortButton('collected')}</InputGroupAddon>
-                                <CustomInput type="select" placeholder="Collected" onChange={this.updateFilter.bind(this, 'collected')}>
+                                <CustomInput id="filter-collected" type="select" placeholder="Collected" onChange={this.updateFilter.bind(this, 'collected')}>
                                     <option value="all">Collected: show all</option>
                                     <option value="yes">Only collected</option>
                                     <option value="no">Only not collected</option>
@@ -190,7 +200,7 @@ class App extends React.Component {
                         <th>
                             <InputGroup size="sm">
                                 <InputGroupAddon addonType="prepend">{this.sortButton('deck')}</InputGroupAddon>
-                                <CustomInput type="select" placeholder="Deck" onChange={this.updateFilter.bind(this, 'deck')}>
+                                <CustomInput id="filter-deck" type="select" placeholder="Deck" onChange={this.updateFilter.bind(this, 'deck')}>
                                     <option value="all">Deck: all</option>
                                     <option value="Monsters">Monsters</option>
                                     <option value="Neutral">Neutral</option>
