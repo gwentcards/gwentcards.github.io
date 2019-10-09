@@ -13,6 +13,7 @@ class App extends React.Component {
 
         this.isChecked = this.isChecked.bind(this);
         this.updateChecked = this.updateChecked.bind(this);
+        this.toggleChecked = this.toggleChecked.bind(this);
         this.updateFilter = this.updateFilter.bind(this);
         this.clearFilter = this.clearFilter.bind(this);
         this.updateSort = this.updateSort.bind(this);
@@ -62,6 +63,13 @@ class App extends React.Component {
         const checked = e.target.checked;
         this.setState(state => {
             return {checked: {...state.checked, ...{[name]: checked}}};
+        });
+    }
+
+    toggleChecked(name) {
+        const checked = this.isChecked(name);
+        this.setState(state => {
+            return {checked: {...state.checked, ...{[name]: !checked}}};
         });
     }
 
@@ -225,8 +233,8 @@ class App extends React.Component {
                     <tbody>
                     {filtered.map(c =>
                         <tr id={c.name} key={c.name}>
-                            <td className="text-center">
-                                <CustomInput type="checkbox" id={'collected-' + c.name} checked={this.isChecked(c.name)} onChange={this.updateChecked.bind(this, c.name)} />
+                            <td className="text-center cursor-pointer" onClick={this.toggleChecked.bind(this, c.name)}>
+                                <CustomInput type="checkbox" className="cursor-pointer" id={'collected-' + c.name} checked={this.isChecked(c.name)} onChange={this.updateChecked.bind(this, c.name)} />
                             </td>
                             <td>{c.deck}</td>
                             <td>{c.territory}</td>
