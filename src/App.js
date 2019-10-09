@@ -108,8 +108,7 @@ class App extends React.Component {
         const newDir = isSorted ? (dir === 'asc' ? 'desc' : 'asc') : 'asc';
         const icon = isSorted ? (dir === 'asc' ? '⬆' : '⬇') : '↕';
 
-        return <Button color="link" title={`Sort by ${field} ${newDir}ending`}
-                       onClick={this.updateSort.bind(this, field)}>{icon}</Button>;
+        return <Button title={`Sort by ${field} ${newDir}ending`} onClick={this.updateSort.bind(this, field)}>{icon}</Button>;
     }
 
     compare(a, b, field, dir) {
@@ -171,18 +170,19 @@ class App extends React.Component {
                     <thead>
                     <tr>
                         <th>
-                            <div className="input-group-sm">
+                            <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('collected')}</InputGroupAddon>
                                 <select className="form-control" placeholder="Collected"
                                         onChange={this.updateFilter.bind(this, 'collected')}>
                                     <option value="all">Collected: show all</option>
                                     <option value="yes">Only collected</option>
                                     <option value="no">Only not collected</option>
                                 </select>
-                            </div>
-                            {this.sortButton('collected')}
+                            </InputGroup>
                         </th>
                         <th>
-                            <div className="input-group-sm">
+                            <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('deck')}</InputGroupAddon>
                                 <select className="form-control" placeholder="Deck"
                                         onChange={this.updateFilter.bind(this, 'deck')}>
                                     <option value="all">Deck: all</option>
@@ -192,36 +192,35 @@ class App extends React.Component {
                                     <option value="Northern Realms">Northern Realms</option>
                                     <option value="Scoia'tael">Scoia'tael</option>
                                 </select>
-                            </div>
-                            {this.sortButton('deck')}
+                            </InputGroup>
                         </th>
                         <th>
                             <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('territory')}</InputGroupAddon>
                                 <Input bsSize="sm" placeholder="Territory" value={f.territory || ''} onChange={this.updateFilter.bind(this, 'territory')}/>
                                 <InputGroupAddon addonType="append" title="Clear territory filter"><Button onClick={this.clearFilter.bind(this, 'territory')}>x</Button></InputGroupAddon>
                             </InputGroup>
-                            {this.sortButton('territory')}
                         </th>
                         <th>
                             <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('name')}</InputGroupAddon>
                                 <Input bsSize="sm" placeholder="Name" value={f.name || ''} onChange={this.updateFilter.bind(this, 'name')}/>
                                 <InputGroupAddon addonType="append" title="Clear name filter"><Button onClick={this.clearFilter.bind(this, 'name')}>x</Button></InputGroupAddon>
                             </InputGroup>
-                            {this.sortButton('name')}
                         </th>
                         <th>
                             <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('location')}</InputGroupAddon>
                                 <Input bsSize="sm" placeholder="Location" value={f.location || ''} onChange={this.updateFilter.bind(this, 'location')}/>
                                 <InputGroupAddon addonType="append" title="Clear location filter"><Button onClick={this.clearFilter.bind(this, 'location')}>x</Button></InputGroupAddon>
                             </InputGroup>
-                            {this.sortButton('location')}
                         </th>
                         <th>
                             <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('details')}</InputGroupAddon>
                                 <Input bsSize="sm" placeholder="Details" value={f.details || ''} onChange={this.updateFilter.bind(this, 'details')}/>
                                 <InputGroupAddon addonType="append" title="Clear details filter"><Button onClick={this.clearFilter.bind(this, 'details')}>x</Button></InputGroupAddon>
                             </InputGroup>
-                            {this.sortButton('details')}
                         </th>
                     </tr>
                     </thead>
