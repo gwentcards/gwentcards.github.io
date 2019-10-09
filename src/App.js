@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {CustomInput, Button, Input, InputGroup, InputGroupAddon, Table} from 'reactstrap';
+import {Button, CustomInput, Input, InputGroup, InputGroupAddon, Progress, Table} from 'reactstrap';
 import cards from './data/cards';
 
 class App extends React.Component {
@@ -8,7 +8,7 @@ class App extends React.Component {
         super(props);
 
         const hash = window.location.hash;
-        const parsed = App.parseHash(hash) || App.baseDeckChecked();
+        const parsed = App.parseHash(hash) || {};
         this.state = {checked: parsed, filter: {}, sort: {field: 'name', dir: 'asc'}};
 
         this.isChecked = this.isChecked.bind(this);
@@ -148,6 +148,34 @@ class App extends React.Component {
         return field === 'name' ? 0 : a.name.localeCompare(b.name);
     }
 
+    countCards() {
+        const r = {};
+        const checked = this.state.checked;
+        for (const c of cards.cards) {
+            const deck = c.deck;
+            const delta = checked[c.name] ? 1 : 0;
+
+            if (!r[deck]) {
+                r[deck] = {collected: delta, total: 1};
+            } else {
+                r[deck].total++;
+                r[deck].collected += delta;
+            }
+        }
+        return r;
+    }
+
+    static printCardCount(counts) {
+        const {total: t, collected: c} = counts;
+        const p = c === 0 ? 0 : c === t ? 100 : Math.floor(c / (t / 100.0));
+        return `${c}/${t} (${p}%)`;
+    }
+
+    static progress(total, counts, deck, color) {
+        const c = counts[deck];
+        return <Progress striped bar color={color} max={total} value={c.collected}>{deck} {App.printCardCount(c)}</Progress>
+    }
+
     render() {
         const f = this.state.filter;
         const collected = f.collected || 'all';
@@ -182,8 +210,19 @@ class App extends React.Component {
         const sortDir = sort.dir === 'asc' ? 1 : -1;
         filtered.sort((a, b) => this.compare(a, b, sortField, sortDir));
 
+        const counts = this.countCards();
+        const totalCount = cards.cards.length;
+
         return (
             <div className="App form-group">
+                <Progress multi max={cards.cards.length}>
+                    {App.progress(totalCount, counts, 'Nilfgaard', 'warning')}
+                    {App.progress(totalCount, counts, 'Monsters', 'danger')}
+                    {App.progress(totalCount, counts, 'Northern Realms', 'primary')}
+                    {App.progress(totalCount, counts, 'Scoia\'tael', 'success')}
+                    {App.progress(totalCount, counts, 'Neutral', 'secondary')}
+                </Progress>
+                {' '}
                 <Table bordered hover striped responsive size="sm">
                     <thead>
                     <tr>
