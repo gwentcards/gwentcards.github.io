@@ -172,26 +172,24 @@ class App extends React.Component {
                         <th>
                             <InputGroup size="sm">
                                 <InputGroupAddon addonType="prepend">{this.sortButton('collected')}</InputGroupAddon>
-                                <select className="form-control" placeholder="Collected"
-                                        onChange={this.updateFilter.bind(this, 'collected')}>
+                                <Input type="select" placeholder="Collected" onChange={this.updateFilter.bind(this, 'collected')}>
                                     <option value="all">Collected: show all</option>
                                     <option value="yes">Only collected</option>
                                     <option value="no">Only not collected</option>
-                                </select>
+                                </Input>
                             </InputGroup>
                         </th>
                         <th>
                             <InputGroup size="sm">
                                 <InputGroupAddon addonType="prepend">{this.sortButton('deck')}</InputGroupAddon>
-                                <select className="form-control" placeholder="Deck"
-                                        onChange={this.updateFilter.bind(this, 'deck')}>
+                                <Input type="select" placeholder="Deck" onChange={this.updateFilter.bind(this, 'deck')}>
                                     <option value="all">Deck: all</option>
                                     <option value="Monsters">Monsters</option>
                                     <option value="Neutral">Neutral</option>
                                     <option value="Nilfgaard">Nilfgaard</option>
                                     <option value="Northern Realms">Northern Realms</option>
                                     <option value="Scoia'tael">Scoia'tael</option>
-                                </select>
+                                </Input>
                             </InputGroup>
                         </th>
                         <th>
