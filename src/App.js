@@ -9,10 +9,11 @@ class App extends React.Component {
 
         const hash = window.location.hash;
         const parsed = App.parseHash(hash) || {};
-        this.state = {checked: parsed};
+        this.state = {checked: parsed, filter: {}};
 
         this.isChecked = this.isChecked.bind(this);
         this.updateChecked = this.updateChecked.bind(this);
+        this.updateFilter = this.updateFilter.bind(this);
     }
 
     static parseHash(hash) {
@@ -56,10 +57,9 @@ class App extends React.Component {
     }
 
     updateChecked(name, e) {
-        const update = {[name]: e.target.checked};
-
+        const checked = e.target.checked;
         this.setState(state => {
-            return {checked: {...state.checked, ...update}};
+            return {checked: {...state.checked, ...{[name]: checked}}};
         });
     }
 
@@ -68,7 +68,49 @@ class App extends React.Component {
         return checked.hasOwnProperty(name) && checked[name];
     }
 
+    updateFilter(field, e) {
+        const value = e.target.value;
+        this.setState(state => {
+            return {filter: {...state.filter, [field]: value}};
+        });
+    }
+
+    static containsFilter(objValue, filterValue) {
+        if (filterValue === '') {
+            return true;
+        }
+        return objValue.toLowerCase().includes(filterValue);
+    }
+
     render() {
+        const f = this.state.filter;
+        const collected = f.collected || 'all';
+        const deck = f.deck || 'all';
+        const territory = (f.territory || '').trim().toLocaleLowerCase();
+        const name = (f.name || '').trim().toLocaleLowerCase();
+        const location = (f.location || '').trim().toLocaleLowerCase();
+        const details = (f.details || '').trim().toLocaleLowerCase();
+
+        const filtered = cards.cards.filter(c => {
+            const name = c.name;
+            if (collected === 'yes') {
+                return this.isChecked(name);
+            } else if (collected === 'no') {
+                return !this.isChecked(name);
+            } else {
+                return true;
+            }
+        }).filter(c => {
+            if (deck === 'all') {
+                return true;
+            }
+            return c.deck === deck;
+        })
+            .filter(c => App.containsFilter(c.territory, territory))
+            .filter(c => App.containsFilter(c.name, name))
+            .filter(c => App.containsFilter(c.location, location))
+            .filter(c => App.containsFilter(c.details, details));
+
         return (
             <div className="App form-group">
                 <Table bordered hover striped responsive size="sm">
@@ -76,49 +118,49 @@ class App extends React.Component {
                     <tr>
                         <th>
                             <div className="input-group-sm">
-                                <select className="form-control" placeholder="Collected">
-                                    <option>Collected: show all</option>
-                                    <option>Only collected</option>
-                                    <option>Only not collected</option>
+                                <select className="form-control" placeholder="Collected" onChange={this.updateFilter.bind(this, 'collected')}>
+                                    <option value="all">Collected: show all</option>
+                                    <option value="yes">Only collected</option>
+                                    <option value="no">Only not collected</option>
                                 </select>
                             </div>
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <select className="form-control" placeholder="Deck">
-                                    <option>Deck: all</option>
-                                    <option>Monsters</option>
-                                    <option>Neutral</option>
-                                    <option>Nilfgaard</option>
-                                    <option>Northern Realms</option>
-                                    <option>Scoia'tael</option>
+                                <select className="form-control" placeholder="Deck" onChange={this.updateFilter.bind(this, 'deck')}>
+                                    <option value="all">Deck: all</option>
+                                    <option value="Monsters">Monsters</option>
+                                    <option value="Neutral">Neutral</option>
+                                    <option value="Nilfgaard">Nilfgaard</option>
+                                    <option value="Northern Realms">Northern Realms</option>
+                                    <option value="Scoia'tael">Scoia'tael</option>
                                 </select>
                             </div>
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Territory"/>
+                                <input type="text" className="form-control input-sm" placeholder="Territory" onChange={this.updateFilter.bind(this, 'territory')}/>
                             </div>
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Name"/>
+                                <input type="text" className="form-control input-sm" placeholder="Name" onChange={this.updateFilter.bind(this, 'name')}/>
                             </div>
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Location"/>
+                                <input type="text" className="form-control input-sm" placeholder="Location" onChange={this.updateFilter.bind(this, 'location')}/>
                             </div>
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Details"/>
+                                <input type="text" className="form-control input-sm" placeholder="Details" onChange={this.updateFilter.bind(this, 'details')}/>
                             </div>
                         </th>
                     </tr>
                     </thead>
                     <tbody>
-                    {cards.cards.map(c =>
+                    {filtered.map(c =>
                         <tr id={c.name} key={c.name}>
                             <td className="text-center">
                                 <div className="custom-control custom-checkbox">
