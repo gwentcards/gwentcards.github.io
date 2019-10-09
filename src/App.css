@@ -9,3 +9,7 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+.dotted {
+  text-decoration: dotted underline;
+}

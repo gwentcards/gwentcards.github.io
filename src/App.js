@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Button, CustomInput, Input, InputGroup, InputGroupAddon, Progress, Table} from 'reactstrap';
+import {Button, CustomInput, Input, InputGroup, InputGroupAddon, Progress, Table, Popover, PopoverBody, PopoverHeader} from 'reactstrap';
 import cards from './data/cards';
 
 class App extends React.Component {
@@ -9,7 +9,7 @@ class App extends React.Component {
 
         const hash = window.location.hash;
         const parsed = App.parseHash(hash) || {};
-        this.state = {checked: parsed, filter: {}, sort: {field: 'name', dir: 'asc'}};
+        this.state = {checked: parsed, filter: {}, sort: {field: 'name', dir: 'asc'}, picture: null};
 
         this.isChecked = this.isChecked.bind(this);
         this.noop = this.noop.bind(this);
@@ -18,6 +18,7 @@ class App extends React.Component {
         this.clearFilter = this.clearFilter.bind(this);
         this.updateSort = this.updateSort.bind(this);
         this.checkAll = this.checkAll.bind(this);
+        this.showPicture = this.showPicture.bind(this);
     }
 
     static parseHash(hash) {
@@ -215,6 +216,10 @@ class App extends React.Component {
             .filter(c => App.containsFilter(c.details, details));
     }
 
+    showPicture(name) {
+        this.setState({picture: name});
+    }
+
     render() {
         const f = this.state.filter;
         const filtered = this.filteredCards();
@@ -227,6 +232,7 @@ class App extends React.Component {
         const counts = this.countCards();
         const totalCount = cards.cards.length;
 
+        const picture = this.state.picture;
         return (
             <div className="App">
                 <div className="space">
@@ -299,21 +305,30 @@ class App extends React.Component {
                     </tr>
                     </thead>
                     <tbody>
-                    {filtered.map(c =>
+                    {filtered.map((c, idx) =>
                         <tr id={c.name} key={c.name}>
                             <td className="text-center cursor-pointer" onClick={this.toggleChecked.bind(this, c.name)}>
                                 <div className="custom-control custom-checkbox cursor-pointer">
-                                    <input type="checkbox" className="custom-control-input cursor-pointer" id={'collected-' + c.name} checked={this.isChecked(c.name)} onChange={this.noop}/>
-                                    <label className="custom-control-label cursor-pointer" htmlFor={'collected-' + c.name}/>
+                                    <input type="checkbox" className="custom-control-input cursor-pointer" id={`collected-${idx}`} checked={this.isChecked(c.name)} onChange={this.noop}/>
+                                    <label className="custom-control-label cursor-pointer" htmlFor={`collected-${idx}`}/>
                                 </div>
 
                             </td>
                             <td>{c.deck}</td>
                             <td>{c.territory}</td>
-                            <td>{c.name}</td>
+                            <td>
+                                <span onMouseEnter={this.showPicture.bind(this, c.name)} onMouseLeave={this.showPicture.bind(this, null)}>
+                                    <span className="cursor-pointer dotted" id={`name-${idx}`}><span role="img" aria-label="pic">🖼️</span> {c.name}</span>
+                                    {picture && picture === c.name &&
+                                    <Popover placement="right" isOpen={true} target={`name-${idx}`} fade={false}>
+                                        <PopoverHeader>{c.name}</PopoverHeader>
+                                        <PopoverBody><a href={`http://s3-ap-southeast-2.amazonaws.com/gwentcards.com/${c.name}.jpg`} target="_blank" rel="noopener noreferrer"><img src={`https://s3-ap-southeast-2.amazonaws.com/gwentcards.com/${c.name}.jpg`} alt={`Not found: ${c.name}`}/></a></PopoverBody>
+                                    </Popover>
+                                    }
+                                </span>
+                            </td>
                             <td>{c.location}</td>
                             <td>{c.details}</td>
-                            {/*<td><img src={`http://s3-ap-southeast-2.amazonaws.com/gwentcards.com/${c.name}.jpg`}/></td>*/}
                         </tr>
                     )}
                     </tbody>
