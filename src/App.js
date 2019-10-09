@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Button, Input, InputGroup, InputGroupAddon, Table} from 'reactstrap';
+import {CustomInput, Button, Input, InputGroup, InputGroupAddon, Table} from 'reactstrap';
 import cards from './data/cards';
 
 class App extends React.Component {
@@ -172,24 +172,24 @@ class App extends React.Component {
                         <th>
                             <InputGroup size="sm">
                                 <InputGroupAddon addonType="prepend">{this.sortButton('collected')}</InputGroupAddon>
-                                <Input type="select" placeholder="Collected" onChange={this.updateFilter.bind(this, 'collected')}>
+                                <CustomInput type="select" placeholder="Collected" onChange={this.updateFilter.bind(this, 'collected')}>
                                     <option value="all">Collected: show all</option>
                                     <option value="yes">Only collected</option>
                                     <option value="no">Only not collected</option>
-                                </Input>
+                                </CustomInput>
                             </InputGroup>
                         </th>
                         <th>
                             <InputGroup size="sm">
                                 <InputGroupAddon addonType="prepend">{this.sortButton('deck')}</InputGroupAddon>
-                                <Input type="select" placeholder="Deck" onChange={this.updateFilter.bind(this, 'deck')}>
+                                <CustomInput type="select" placeholder="Deck" onChange={this.updateFilter.bind(this, 'deck')}>
                                     <option value="all">Deck: all</option>
                                     <option value="Monsters">Monsters</option>
                                     <option value="Neutral">Neutral</option>
                                     <option value="Nilfgaard">Nilfgaard</option>
                                     <option value="Northern Realms">Northern Realms</option>
                                     <option value="Scoia'tael">Scoia'tael</option>
-                                </Input>
+                                </CustomInput>
                             </InputGroup>
                         </th>
                         <th>
@@ -226,12 +226,7 @@ class App extends React.Component {
                     {filtered.map(c =>
                         <tr id={c.name} key={c.name}>
                             <td className="text-center">
-                                <div className="custom-control custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id={'collected-' + c.name}
-                                           checked={this.isChecked(c.name)}
-                                           onChange={this.updateChecked.bind(this, c.name)}/>
-                                    <label className="custom-control-label" htmlFor={'collected-' + c.name}/>
-                                </div>
+                                <CustomInput type="checkbox" id={'collected-' + c.name} checked={this.isChecked(c.name)} onChange={this.updateChecked.bind(this, c.name)} />
                             </td>
                             <td>{c.deck}</td>
                             <td>{c.territory}</td>
