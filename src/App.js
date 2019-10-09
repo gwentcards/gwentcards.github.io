@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Table} from 'reactstrap';
+import {Button, Table} from 'reactstrap';
 import cards from './data/cards';
 
 class App extends React.Component {
@@ -9,11 +9,12 @@ class App extends React.Component {
 
         const hash = window.location.hash;
         const parsed = App.parseHash(hash) || {};
-        this.state = {checked: parsed, filter: {}};
+        this.state = {checked: parsed, filter: {}, sort: {field: 'name', dir: 'asc'}};
 
         this.isChecked = this.isChecked.bind(this);
         this.updateChecked = this.updateChecked.bind(this);
         this.updateFilter = this.updateFilter.bind(this);
+        this.updateSort = this.updateSort.bind(this);
     }
 
     static parseHash(hash) {
@@ -75,11 +76,51 @@ class App extends React.Component {
         });
     }
 
+    updateSort(field) {
+        this.setState(state => {
+            const f = state.sort.field;
+            const dir = state.sort.dir;
+
+            const newDir = field === f ? (dir === 'asc' ? 'desc' : 'asc') : 'asc';
+            return {sort: {field: field, dir: newDir}};
+        });
+    }
+
     static containsFilter(objValue, filterValue) {
         if (filterValue === '') {
             return true;
         }
         return objValue.toLowerCase().includes(filterValue);
+    }
+
+    sortButton(field) {
+        const s = this.state.sort;
+        const dir = s.dir;
+        const isSorted = s.field === field;
+        const newDir = isSorted ? (dir === 'asc' ? 'desc' : 'asc') : 'asc';
+        const icon = isSorted ? (dir === 'asc' ? '⬆' : '⬇') : '↕';
+
+        return <Button color="link" title={`Sort by ${field} ${newDir}ending`}
+                       onClick={this.updateSort.bind(this, field)}>{icon}</Button>;
+    }
+
+    compare(a, b, field, dir) {
+        if (field === 'collected') {
+            const ac = this.isChecked(a.name);
+            const bc = this.isChecked(b.name);
+            if (ac && !bc) {
+                return dir * -1;
+            } else if (bc && !ac) {
+                return dir * 1;
+            }
+        } else {
+            const r = a[field].localeCompare(b[field]);
+            if (r !== 0) {
+                return dir * r;
+            }
+        }
+
+        return field === 'name' ? 0 : a.name.localeCompare(b.name);
     }
 
     render() {
@@ -111,6 +152,11 @@ class App extends React.Component {
             .filter(c => App.containsFilter(c.location, location))
             .filter(c => App.containsFilter(c.details, details));
 
+        const sort = this.state.sort;
+        const sortField = sort.field;
+        const sortDir = sort.dir === 'asc' ? 1 : -1;
+        filtered.sort((a, b) => this.compare(a, b, sortField, sortDir));
+
         return (
             <div className="App form-group">
                 <Table bordered hover striped responsive size="sm">
@@ -118,16 +164,19 @@ class App extends React.Component {
                     <tr>
                         <th>
                             <div className="input-group-sm">
-                                <select className="form-control" placeholder="Collected" onChange={this.updateFilter.bind(this, 'collected')}>
+                                <select className="form-control" placeholder="Collected"
+                                        onChange={this.updateFilter.bind(this, 'collected')}>
                                     <option value="all">Collected: show all</option>
                                     <option value="yes">Only collected</option>
                                     <option value="no">Only not collected</option>
                                 </select>
                             </div>
+                            {this.sortButton('collected')}
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <select className="form-control" placeholder="Deck" onChange={this.updateFilter.bind(this, 'deck')}>
+                                <select className="form-control" placeholder="Deck"
+                                        onChange={this.updateFilter.bind(this, 'deck')}>
                                     <option value="all">Deck: all</option>
                                     <option value="Monsters">Monsters</option>
                                     <option value="Neutral">Neutral</option>
@@ -136,26 +185,35 @@ class App extends React.Component {
                                     <option value="Scoia'tael">Scoia'tael</option>
                                 </select>
                             </div>
+                            {this.sortButton('deck')}
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Territory" onChange={this.updateFilter.bind(this, 'territory')}/>
+                                <input type="text" className="form-control input-sm" placeholder="Territory"
+                                       onChange={this.updateFilter.bind(this, 'territory')}/>
                             </div>
+                            {this.sortButton('territory')}
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Name" onChange={this.updateFilter.bind(this, 'name')}/>
+                                <input type="text" className="form-control input-sm" placeholder="Name"
+                                       onChange={this.updateFilter.bind(this, 'name')}/>
                             </div>
+                            {this.sortButton('name')}
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Location" onChange={this.updateFilter.bind(this, 'location')}/>
+                                <input type="text" className="form-control input-sm" placeholder="Location"
+                                       onChange={this.updateFilter.bind(this, 'location')}/>
                             </div>
+                            {this.sortButton('location')}
                         </th>
                         <th>
                             <div className="input-group-sm">
-                                <input type="text" className="form-control input-sm" placeholder="Details" onChange={this.updateFilter.bind(this, 'details')}/>
+                                <input type="text" className="form-control input-sm" placeholder="Details"
+                                       onChange={this.updateFilter.bind(this, 'details')}/>
                             </div>
+                            {this.sortButton('details')}
                         </th>
                     </tr>
                     </thead>
