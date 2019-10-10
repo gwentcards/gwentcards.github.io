@@ -318,7 +318,7 @@ class App extends React.Component {
                             <td>{c.territory}</td>
                             <td>
                                 <span onMouseEnter={this.showPicture.bind(this, c.name)} onMouseLeave={this.showPicture.bind(this, null)}>
-                                    <span className="cursor-pointer dotted" id={`name-${idx}`}><span role="img" aria-label="pic">🖼️</span> {c.name}</span>
+                                    <span className="cursor-pointer dotted" id={`name-${idx}`}>{c.name}</span>
                                     {picture && picture === c.name &&
                                     <Popover placement="right" isOpen={true} target={`name-${idx}`} fade={false}>
                                         <PopoverHeader>{c.name}</PopoverHeader>
