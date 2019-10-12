@@ -13,6 +13,7 @@ import {
     Table
 } from 'reactstrap';
 import cards from './data/cards';
+import GithubMark from './assets/GitHub-Mark-32px.png';
 
 class App extends React.Component {
     constructor(props) {
@@ -345,6 +346,10 @@ class App extends React.Component {
                         )}
                         </tbody>
                     </Table>
+                </div></div>
+                <div className="row mb-2"><div className="col text-center small">
+                    <p>Pictures and a lot of information taken from <a href="https://witcher.fandom.com/">itcher Wiki | FANDOM powered by Wikia</a> under <a href="https://www.fandom.com/licensing">CC BY-SA license</a>.</p>
+                    <p><a href="https://github.com/vzx/gwentcards/"><img src={GithubMark} alt="Source code on Github" title="Source code on Github"/></a></p>
                 </div></div>
             </div>
         );
