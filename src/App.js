@@ -147,9 +147,11 @@ class App extends React.Component {
     countCards() {
         const r = {};
         const checked = this.state.checked;
+        let totalCollected = 0;
         for (const c of cards.cards) {
             const deck = c.deck;
             const delta = checked[c.name] ? 1 : 0;
+            totalCollected += delta;
 
             if (!r[deck]) {
                 r[deck] = {collected: delta, total: 1};
@@ -158,7 +160,7 @@ class App extends React.Component {
                 r[deck].collected += delta;
             }
         }
-        return r;
+        return [totalCollected, r];
     }
 
     static printCardCount(counts) {
@@ -169,7 +171,8 @@ class App extends React.Component {
 
     static progress(total, counts, deck, color) {
         const c = counts[deck];
-        return <Progress striped bar color={color} max={total} value={c.collected}>{deck} {App.printCardCount(c)}</Progress>
+        const caption = `${deck} ${App.printCardCount(c)}`;
+        return <Progress striped bar color={color} max={total} value={c.collected}><span title={caption}>{caption}</span></Progress>
     }
 
     filteredCards() {
@@ -215,7 +218,7 @@ class App extends React.Component {
         const sortDir = sort.dir === 'asc' ? 1 : -1;
         filtered.sort((a, b) => this.compare(a, b, sortField, sortDir));
 
-        const counts = this.countCards();
+        const [totalCollected, counts] = this.countCards();
         const totalCount = cards.cards.length;
 
         const picture = this.state.picture;
@@ -232,7 +235,8 @@ class App extends React.Component {
                 </div>
                 <div className="space">
                     <Button size="sm" onClick={this.checkAll.bind(this, true)}>Check all visible</Button>{' '}
-                    <Button size="sm" onClick={this.checkAll.bind(this, false)}>Uncheck all visible</Button>
+                    <Button size="sm" onClick={this.checkAll.bind(this, false)}>Uncheck all visible</Button>{' '}
+                    <span>Showing {filtered.length} of {totalCount} cards. Collected {totalCollected}.</span>
                 </div>
                 <Table bordered hover striped responsive size="sm" className="space">
                     <thead>
