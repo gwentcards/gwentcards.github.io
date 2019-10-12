@@ -7,8 +7,10 @@ class App extends React.Component {
     constructor(props) {
         super(props);
 
+        this.cards = App.sortCards(cards.cards);
+
         const hash = window.location.hash;
-        const parsed = App.parseHash(hash) || {};
+        const parsed = App.parseHash(this.cards, hash) || {};
         this.state = {checked: parsed, filter: {}, sort: {field: 'name', dir: 'asc'}, picture: null};
 
         this.isChecked = this.isChecked.bind(this);
@@ -21,14 +23,21 @@ class App extends React.Component {
         this.showPicture = this.showPicture.bind(this);
     }
 
-    static parseHash(hash) {
+    static sortCards(cards) {
+        const copy = cards.slice();
+        copy.sort((l, r) => {
+            return l.name.localeCompare(r.name);
+        });
+        return copy;
+    }
+
+    static parseHash(c, hash) {
         if (hash.length === 0 || hash.charAt(0) !== '#') {
             return;
         }
 
         hash = hash.substring(1);
 
-        const c = cards.cards;
         if (c.length !== hash.length) {
             return;
         }
@@ -45,8 +54,8 @@ class App extends React.Component {
 
     static buildHash(checked) {
         const arr = [];
-        for (let i = 0; i < cards.cards.length; i++) {
-            const name = cards.cards[i].name;
+        for (let i = 0; i < this.cards.length; i++) {
+            const name = this.cards[i].name;
             const v = checked.hasOwnProperty(name) && checked[name] ? 1 : 0;
             arr.push('' + v);
 
@@ -151,7 +160,7 @@ class App extends React.Component {
     countCards() {
         const r = {};
         const checked = this.state.checked;
-        for (const c of cards.cards) {
+        for (const c of this.cards) {
             const deck = c.deck;
             const delta = checked[c.name] ? 1 : 0;
 
@@ -185,7 +194,7 @@ class App extends React.Component {
         const type = (f.type || '').trim().toLocaleLowerCase();
         const details = (f.details || '').trim().toLocaleLowerCase();
 
-        return cards.cards.filter(c => {
+        return this.cards.filter(c => {
             const name = c.name;
             if (collected === 'yes') {
                 return this.isChecked(name);
@@ -220,13 +229,13 @@ class App extends React.Component {
         filtered.sort((a, b) => this.compare(a, b, sortField, sortDir));
 
         const counts = this.countCards();
-        const totalCount = cards.cards.length;
+        const totalCount = this.cards.length;
 
         const picture = this.state.picture;
         return (
             <div className="App">
                 <div className="space">
-                    <Progress multi max={cards.cards.length}>
+                    <Progress multi max={this.cards.length}>
                         {App.progress(totalCount, counts, 'Nilfgaard', 'warning')}
                         {App.progress(totalCount, counts, 'Monsters', 'danger')}
                         {App.progress(totalCount, counts, 'Northern Realms', 'primary')}
