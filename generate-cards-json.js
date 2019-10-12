@@ -14,7 +14,7 @@ fs.readFile('cards.txt', 'utf8', (err, data) => {
         return;
     }
 
-    const lines = data.replace('\r\n', '\n').replace('\r', '\n').split('\n').slice(1);
+    const lines = data.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n').slice(1);
     console.log(`Parsing ${lines.length} lines`);
 
     const arr = [];

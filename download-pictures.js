@@ -15,7 +15,7 @@ fs.readFile('cards.txt', 'utf8', (err, data) => {
         return;
     }
 
-    const lines = data.replace('\r\n', '\n').replace('\r', '\n').split('\n').slice(1);
+    const lines = data.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n').slice(1);
     console.log(`Parsing ${lines.length} lines`);
 
     let i = 0;
@@ -41,5 +41,5 @@ fs.readFile('cards.txt', 'utf8', (err, data) => {
             fs.unlink(filename); // Delete the file async. (But we don't check the result)
         });
     }
-    console.log('Finished downloading pictures')
+    console.log('Download of all pictures initiated')
 });

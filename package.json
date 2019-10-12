@@ -18,7 +18,8 @@
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "generate-json": "node generate-cards-json.js",
-    "download-pictures": "node download-pictures.js"
+    "download-pictures": "node download-pictures.js",
+    "check-wiki-links": "node check-wiki-links.js"
   },
   "eslintConfig": {
     "extends": "react-app"
