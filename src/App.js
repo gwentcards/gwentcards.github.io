@@ -311,7 +311,10 @@ class App extends React.Component {
                                     {picture && picture === c.name &&
                                     <Popover placement="right" isOpen={true} target={`name-${idx}`} fade={false}>
                                         <PopoverHeader>{c.name}</PopoverHeader>
-                                        <PopoverBody><a href={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} target="_blank" rel="noopener noreferrer"><img className="card-picture" src={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} alt={`Not found: ${c.name}`}/></a></PopoverBody>
+                                        <PopoverBody>
+                                            <a href={`https://witcher.fandom.com/wiki/${c.name.replace(/\(\d of \d\)/, '').trim().replace(/ /g, '_')}_(gwent_card)`}>{c.name.replace(/\(\d of \d\)/, '').trim()} on Witcher wiki</a><br/>
+                                            <a href={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} target="_blank" rel="noopener noreferrer"><img className="card-picture" src={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} alt={`Not found: ${c.name}`}/></a>
+                                        </PopoverBody>
                                     </Popover>
                                     }
                                 </span>
