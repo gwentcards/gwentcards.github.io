@@ -23,3 +23,6 @@ idea/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# cards.json should be generated
+src/data/cards.json
