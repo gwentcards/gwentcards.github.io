@@ -16,7 +16,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "generate-json": "node generate-cards-json.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,6 +35,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "js-sha1": "^0.6.0"
   }
 }

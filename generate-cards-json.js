@@ -1,4 +1,5 @@
 const fs = require('fs');
+const sha1 = require('js-sha1');
 
 try {
     fs.mkdirSync('src/data/');
@@ -29,7 +30,7 @@ fs.readFile('cards.txt', 'utf8', (err, data) => {
             details = details.slice(1, -1)
         }
 
-        arr.push({deck: deck.trim(), territory: territory.trim(), name: name.trim(), type: type.trim(), details: details.trim(), picture: picture.trim()});
+        arr.push({deck: deck.trim(), territory: territory.trim(), name: name.trim(), type: type.trim(), details: details.trim(), picture: sha1(picture.trim()) + '.png'});
     }
     console.log(`Parsed ${arr.length} rows`);
 
