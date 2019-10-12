@@ -22,18 +22,15 @@ class App extends React.Component {
     }
 
     static parseHash(c, hash) {
-        if (hash.length === 0 || hash.charAt(0) !== '#') {
+        if (hash.length < 2 || hash.charAt(0) !== '#') {
             return;
         }
 
         hash = hash.substring(1);
 
-        if (c.length !== hash.length) {
-            return;
-        }
-
         const obj = {};
-        for (let i = 0; i < c.length; i++) {
+        const n = Math.min(c.length, hash.length);
+        for (let i = 0; i < n; i++) {
             const v = hash.charAt(i);
             if (v === '1') {
                 obj[c[i].name] = true;
