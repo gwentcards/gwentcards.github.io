@@ -1,9 +1,15 @@
 const fs = require('fs');
 
-fs.readFile('cards.csv', 'utf8', (err, data) => {
-    console.log('Reading cards.csv');
+try {
+    fs.mkdirSync('src/data/');
+} catch (err) {
+    if (err.code !== 'EEXIST') { throw err }
+}
+
+fs.readFile('cards.txt', 'utf8', (err, data) => {
+    console.log('Reading cards.txt');
     if (err) {
-        console.error('Error reading cards.csv', err);
+        console.error('Error reading cards.txt', err);
         return;
     }
 
@@ -14,16 +20,16 @@ fs.readFile('cards.csv', 'utf8', (err, data) => {
     for (const line of lines) {
         const trimmed = line.trim();
         if (trimmed.length === 0) {
+            // Skip header
             continue;
         }
-        const cols = trimmed.split(',');
-        const [deck, territory, name, location] = cols;
-        let details = cols.slice(4).join(',').slice(0, -1);
-        if (details.startsWith("\"") && details.endsWith("\"")) {
-            details = details.slice(1, -1);
+        const cols = trimmed.split('\t');
+        let [deck, territory, name, type, details, picture] = cols;
+        if (details.startsWith('\"') && details.endsWith('\"')) {
+            details = details.slice(1, -1)
         }
 
-        arr.push({deck, territory, name, location, details});
+        arr.push({deck: deck.trim(), territory: territory.trim(), name: name.trim(), type: type.trim(), details: details.trim(), picture: picture.trim()});
     }
     console.log(`Parsed ${arr.length} rows`);
 
