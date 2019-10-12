@@ -1,6 +1,17 @@
 import React from 'react';
 import './App.css';
-import {Button, CustomInput, Input, InputGroup, InputGroupAddon, Progress, Table, Popover, PopoverBody, PopoverHeader} from 'reactstrap';
+import {
+    Button,
+    CustomInput,
+    Input,
+    InputGroup,
+    InputGroupAddon,
+    Popover,
+    PopoverBody,
+    PopoverHeader,
+    Progress,
+    Table
+} from 'reactstrap';
 import cards from './data/cards';
 
 class App extends React.Component {
@@ -163,10 +174,13 @@ class App extends React.Component {
         return [totalCollected, r];
     }
 
+    static percentage(part, total) {
+        return part === 0 ? 0 : part === total ? 100 : Math.floor(part / (total / 100.0));
+    }
+
     static printCardCount(counts) {
         const {total: t, collected: c} = counts;
-        const p = c === 0 ? 0 : c === t ? 100 : Math.floor(c / (t / 100.0));
-        return `${c}/${t} (${p}%)`;
+        return `${c}/${t} (${App.percentage(c, t)}%)`;
     }
 
     static progress(total, counts, deck, color) {
@@ -236,7 +250,7 @@ class App extends React.Component {
                 <div className="space">
                     <Button size="sm" onClick={this.checkAll.bind(this, true)}>Check all visible</Button>{' '}
                     <Button size="sm" onClick={this.checkAll.bind(this, false)}>Uncheck all visible</Button>{' '}
-                    <span>Showing {filtered.length} of {totalCount} cards. Collected {totalCollected}.</span>
+                    <span>Showing {filtered.length} of {totalCount} cards. Collected {totalCollected} ({App.percentage(totalCollected, totalCount)}%).</span>
                 </div>
                 <Table bordered hover striped responsive size="sm" className="space">
                     <thead>
