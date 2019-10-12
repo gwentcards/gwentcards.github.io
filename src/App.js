@@ -312,7 +312,7 @@ class App extends React.Component {
                                     {picture && picture === c.name &&
                                     <Popover placement="right" isOpen={true} target={`name-${idx}`} fade={false}>
                                         <PopoverHeader>{c.name}</PopoverHeader>
-                                        <PopoverBody><a href={`http://s3-ap-southeast-2.amazonaws.com/gwentcards.com/${c.name}.jpg`} target="_blank" rel="noopener noreferrer"><img src={`https://s3-ap-southeast-2.amazonaws.com/gwentcards.com/${c.name}.jpg`} alt={`Not found: ${c.name}`}/></a></PopoverBody>
+                                        <PopoverBody><a href={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} target="_blank" rel="noopener noreferrer"><img className="card-picture" src={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} alt={`Not found: ${c.name}`}/></a></PopoverBody>
                                     </Popover>
                                     }
                                 </span>

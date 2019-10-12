@@ -13,3 +13,11 @@
 .dotted {
   text-decoration: dotted underline;
 }
+
+.card-picture {
+  width: 300px;
+}
+
+.popover {
+  max-width: 500px;
+}
