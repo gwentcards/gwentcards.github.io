@@ -34,6 +34,8 @@ fs.readFile('cards.txt', 'utf8', (err, data) => {
     }
     console.log(`Parsed ${arr.length} rows`);
 
+    arr.sort((a, b) => a.name.localeCompare(b.name));
+
     fs.writeFile('src/data/cards.json', JSON.stringify({cards: arr}, null, 2), err => {
         if (err) {
             console.error('Unable to write JSON data to cards.json', err);
