@@ -348,7 +348,8 @@ class App extends React.Component {
                     </Table>
                 </div></div>
                 <div className="row mb-2"><div className="col text-center small">
-                    <p>Pictures and a lot of information taken from <a href="https://witcher.fandom.com/">itcher Wiki | FANDOM powered by Wikia</a> under <a href="https://www.fandom.com/licensing">CC BY-SA license</a>.</p>
+                    <p>Pictures and a lot of information taken from <a href="https://witcher.fandom.com/">Witcher Wiki | FANDOM powered by Wikia</a> under <a href="https://www.fandom.com/licensing">CC BY-SA license</a>.</p>
+                    <p>Card data: <a href="data/cards.json">in JSON format</a> | <a href="https://github.com/vzx/gwentcards/raw/master/cards.txt">in TAB separated text format</a>.</p>
                     <p><a href="https://github.com/vzx/gwentcards/"><img src={GithubMark} alt="Source code on Github" title="Source code on Github"/></a></p>
                 </div></div>
             </div>
