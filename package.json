@@ -17,7 +17,8 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "generate-json": "node generate-cards-json.js"
+    "generate-json": "node generate-cards-json.js",
+    "download-pictures": "node download-pictures.js"
   },
   "eslintConfig": {
     "extends": "react-app"
