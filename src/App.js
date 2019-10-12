@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Button, Card, CardBody, CustomInput, Input, InputGroup, InputGroupAddon, Progress, Table, Popover, PopoverBody, PopoverHeader, Nav, NavItem, NavLink, TabContent, TabPane} from 'reactstrap';
+import {Button, CustomInput, Input, InputGroup, InputGroupAddon, Progress, Table, Popover, PopoverBody, PopoverHeader} from 'reactstrap';
 import cards from './data/cards';
 
 class App extends React.Component {
@@ -9,7 +9,7 @@ class App extends React.Component {
 
         const hash = window.location.hash;
         const parsed = App.parseHash(cards.cards, hash) || {};
-        this.state = {checked: parsed, filter: {}, sort: {field: 'name', dir: 'asc'}, picture: null, activeTab: 'cards'};
+        this.state = {checked: parsed, filter: {}, sort: {field: 'name', dir: 'asc'}, picture: null};
 
         this.isChecked = this.isChecked.bind(this);
         this.noop = this.noop.bind(this);
@@ -19,7 +19,6 @@ class App extends React.Component {
         this.updateSort = this.updateSort.bind(this);
         this.checkAll = this.checkAll.bind(this);
         this.showPicture = this.showPicture.bind(this);
-        this.switchTab = this.switchTab.bind(this);
     }
 
     static parseHash(c, hash) {
@@ -207,10 +206,6 @@ class App extends React.Component {
         this.setState({picture: name});
     }
 
-    switchTab(tab) {
-        this.setState({activeTab: tab});
-    }
-
     render() {
         const f = this.state.filter;
         const filtered = this.filteredCards();
@@ -224,122 +219,109 @@ class App extends React.Component {
         const totalCount = cards.cards.length;
 
         const picture = this.state.picture;
-        const activeTab = this.state.activeTab;
         return (
             <div className="App">
-                <Nav tabs>
-                    <NavItem><NavLink href="#" onClick={this.switchTab.bind(this, 'cards')} active={activeTab === 'cards'}>Cards</NavLink></NavItem>
-                    <NavItem><NavLink href="#" onClick={this.switchTab.bind(this, 'players')} active={activeTab === 'players'}>Gwent players</NavLink></NavItem>
-                </Nav>
+                <div className="space">
+                    <Progress multi max={cards.cards.length}>
+                        {App.progress(totalCount, counts, 'Nilfgaard', 'warning')}
+                        {App.progress(totalCount, counts, 'Monsters', 'danger')}
+                        {App.progress(totalCount, counts, 'Northern Realms', 'primary')}
+                        {App.progress(totalCount, counts, 'Scoia\'tael', 'success')}
+                        {App.progress(totalCount, counts, 'Neutral', 'secondary')}
+                    </Progress>
+                </div>
+                <div className="space">
+                    <Button size="sm" onClick={this.checkAll.bind(this, true)}>Check all visible</Button>{' '}
+                    <Button size="sm" onClick={this.checkAll.bind(this, false)}>Uncheck all visible</Button>
+                </div>
+                <Table bordered hover striped responsive size="sm" className="space">
+                    <thead>
+                    <tr>
+                        <th>
+                            <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('collected')}</InputGroupAddon>
+                                <CustomInput id="filter-collected" type="select" placeholder="Collected" onChange={this.updateFilter.bind(this, 'collected')}>
+                                    <option value="all">Collected: show all</option>
+                                    <option value="yes">Only collected</option>
+                                    <option value="no">Only not collected</option>
+                                </CustomInput>
+                            </InputGroup>
+                        </th>
+                        <th>
+                            <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('deck')}</InputGroupAddon>
+                                <CustomInput id="filter-deck" type="select" placeholder="Deck" onChange={this.updateFilter.bind(this, 'deck')}>
+                                    <option value="all">Deck: all</option>
+                                    <option value="Monsters">Monsters</option>
+                                    <option value="Neutral">Neutral</option>
+                                    <option value="Nilfgaard">Nilfgaard</option>
+                                    <option value="Northern Realms">Northern Realms</option>
+                                    <option value="Scoia'tael">Scoia'tael</option>
+                                </CustomInput>
+                            </InputGroup>
+                        </th>
+                        <th>
+                            <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('territory')}</InputGroupAddon>
+                                <Input bsSize="sm" placeholder="Territory" value={f.territory || ''} onChange={this.updateFilter.bind(this, 'territory')}/>
+                                <InputGroupAddon addonType="append" title="Clear territory filter"><Button onClick={this.clearFilter.bind(this, 'territory')}>x</Button></InputGroupAddon>
+                            </InputGroup>
+                        </th>
+                        <th>
+                            <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('name')}</InputGroupAddon>
+                                <Input bsSize="sm" placeholder="Name" value={f.name || ''} onChange={this.updateFilter.bind(this, 'name')}/>
+                                <InputGroupAddon addonType="append" title="Clear name filter"><Button onClick={this.clearFilter.bind(this, 'name')}>x</Button></InputGroupAddon>
+                            </InputGroup>
+                        </th>
+                        <th>
+                            <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('type')}</InputGroupAddon>
+                                <Input bsSize="sm" placeholder="Type" value={f.type || ''} onChange={this.updateFilter.bind(this, 'type')}/>
+                                <InputGroupAddon addonType="append" title="Clear type filter"><Button onClick={this.clearFilter.bind(this, 'type')}>x</Button></InputGroupAddon>
+                            </InputGroup>
+                        </th>
+                        <th>
+                            <InputGroup size="sm">
+                                <InputGroupAddon addonType="prepend">{this.sortButton('details')}</InputGroupAddon>
+                                <Input bsSize="sm" placeholder="Details" value={f.details || ''} onChange={this.updateFilter.bind(this, 'details')}/>
+                                <InputGroupAddon addonType="append" title="Clear details filter"><Button onClick={this.clearFilter.bind(this, 'details')}>x</Button></InputGroupAddon>
+                            </InputGroup>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {filtered.map((c, idx) =>
+                        <tr id={c.name} key={c.name}>
+                            <td className="text-center cursor-pointer" onClick={this.toggleChecked.bind(this, c.name)}>
+                                <div className="custom-control custom-checkbox cursor-pointer">
+                                    <input type="checkbox" className="custom-control-input cursor-pointer" id={`collected-${idx}`} checked={this.isChecked(c.name)} onChange={this.noop}/>
+                                    <label className="custom-control-label cursor-pointer" htmlFor={`collected-${idx}`}/>
+                                </div>
 
-                <TabContent activeTab={activeTab}>
-                    <TabPane tabId="cards"><Card><CardBody>
-                        <div className="space">
-                            <Progress multi max={cards.cards.length}>
-                                {App.progress(totalCount, counts, 'Nilfgaard', 'warning')}
-                                {App.progress(totalCount, counts, 'Monsters', 'danger')}
-                                {App.progress(totalCount, counts, 'Northern Realms', 'primary')}
-                                {App.progress(totalCount, counts, 'Scoia\'tael', 'success')}
-                                {App.progress(totalCount, counts, 'Neutral', 'secondary')}
-                            </Progress>
-                        </div>
-                        <div className="space">
-                            <Button size="sm" onClick={this.checkAll.bind(this, true)}>Check all visible</Button>{' '}
-                            <Button size="sm" onClick={this.checkAll.bind(this, false)}>Uncheck all visible</Button>
-                        </div>
-                        <Table bordered hover striped responsive size="sm" className="space">
-                            <thead>
-                            <tr>
-                                <th>
-                                    <InputGroup size="sm">
-                                        <InputGroupAddon addonType="prepend">{this.sortButton('collected')}</InputGroupAddon>
-                                        <CustomInput id="filter-collected" type="select" placeholder="Collected" onChange={this.updateFilter.bind(this, 'collected')}>
-                                            <option value="all">Collected: show all</option>
-                                            <option value="yes">Only collected</option>
-                                            <option value="no">Only not collected</option>
-                                        </CustomInput>
-                                    </InputGroup>
-                                </th>
-                                <th>
-                                    <InputGroup size="sm">
-                                        <InputGroupAddon addonType="prepend">{this.sortButton('deck')}</InputGroupAddon>
-                                        <CustomInput id="filter-deck" type="select" placeholder="Deck" onChange={this.updateFilter.bind(this, 'deck')}>
-                                            <option value="all">Deck: all</option>
-                                            <option value="Monsters">Monsters</option>
-                                            <option value="Neutral">Neutral</option>
-                                            <option value="Nilfgaard">Nilfgaard</option>
-                                            <option value="Northern Realms">Northern Realms</option>
-                                            <option value="Scoia'tael">Scoia'tael</option>
-                                        </CustomInput>
-                                    </InputGroup>
-                                </th>
-                                <th>
-                                    <InputGroup size="sm">
-                                        <InputGroupAddon addonType="prepend">{this.sortButton('territory')}</InputGroupAddon>
-                                        <Input bsSize="sm" placeholder="Territory" value={f.territory || ''} onChange={this.updateFilter.bind(this, 'territory')}/>
-                                        <InputGroupAddon addonType="append" title="Clear territory filter"><Button onClick={this.clearFilter.bind(this, 'territory')}>x</Button></InputGroupAddon>
-                                    </InputGroup>
-                                </th>
-                                <th>
-                                    <InputGroup size="sm">
-                                        <InputGroupAddon addonType="prepend">{this.sortButton('name')}</InputGroupAddon>
-                                        <Input bsSize="sm" placeholder="Name" value={f.name || ''} onChange={this.updateFilter.bind(this, 'name')}/>
-                                        <InputGroupAddon addonType="append" title="Clear name filter"><Button onClick={this.clearFilter.bind(this, 'name')}>x</Button></InputGroupAddon>
-                                    </InputGroup>
-                                </th>
-                                <th>
-                                    <InputGroup size="sm">
-                                        <InputGroupAddon addonType="prepend">{this.sortButton('type')}</InputGroupAddon>
-                                        <Input bsSize="sm" placeholder="Type" value={f.type || ''} onChange={this.updateFilter.bind(this, 'type')}/>
-                                        <InputGroupAddon addonType="append" title="Clear type filter"><Button onClick={this.clearFilter.bind(this, 'type')}>x</Button></InputGroupAddon>
-                                    </InputGroup>
-                                </th>
-                                <th>
-                                    <InputGroup size="sm">
-                                        <InputGroupAddon addonType="prepend">{this.sortButton('details')}</InputGroupAddon>
-                                        <Input bsSize="sm" placeholder="Details" value={f.details || ''} onChange={this.updateFilter.bind(this, 'details')}/>
-                                        <InputGroupAddon addonType="append" title="Clear details filter"><Button onClick={this.clearFilter.bind(this, 'details')}>x</Button></InputGroupAddon>
-                                    </InputGroup>
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {filtered.map((c, idx) =>
-                                <tr id={c.name} key={c.name}>
-                                    <td className="text-center cursor-pointer" onClick={this.toggleChecked.bind(this, c.name)}>
-                                        <div className="custom-control custom-checkbox cursor-pointer">
-                                            <input type="checkbox" className="custom-control-input cursor-pointer" id={`collected-${idx}`} checked={this.isChecked(c.name)} onChange={this.noop}/>
-                                            <label className="custom-control-label cursor-pointer" htmlFor={`collected-${idx}`}/>
-                                        </div>
-
-                                    </td>
-                                    <td>{c.deck}</td>
-                                    <td>{c.territory}</td>
-                                    <td>
-                                        <span onMouseEnter={this.showPicture.bind(this, c.name)} onMouseLeave={this.showPicture.bind(this, null)}>
-                                            <span className="cursor-pointer dotted" id={`name-${idx}`}>{c.name}</span>
-                                            {picture && picture === c.name &&
-                                            <Popover placement="right" isOpen={true} target={`name-${idx}`} fade={false}>
-                                                <PopoverHeader>{c.name}</PopoverHeader>
-                                                <PopoverBody>
-                                                    <a href={`https://witcher.fandom.com/wiki/${c.name.replace(/\(\d of \d\)/, '').trim().replace(/ /g, '_')}_(gwent_card)`}>{c.name.replace(/\(\d of \d\)/, '').trim()} on Witcher wiki</a><br/>
-                                                    <a href={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} target="_blank" rel="noopener noreferrer"><img className="card-picture" src={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} alt={`Not found: ${c.name}`}/></a>
-                                                </PopoverBody>
-                                            </Popover>
-                                            }
-                                        </span>
-                                    </td>
-                                    <td>{c.type}</td>
-                                    <td>{c.details}</td>
-                                </tr>
-                            )}
-                            </tbody>
-                        </Table>
-                    </CardBody></Card></TabPane>
-                    <TabPane tabId="players"><Card><CardBody>
-                        Hello, NPC world
-                    </CardBody></Card></TabPane>
-                </TabContent>
+                            </td>
+                            <td>{c.deck}</td>
+                            <td>{c.territory}</td>
+                            <td>
+                                <span onMouseEnter={this.showPicture.bind(this, c.name)} onMouseLeave={this.showPicture.bind(this, null)}>
+                                    <span className="cursor-pointer dotted" id={`name-${idx}`}>{c.name}</span>
+                                    {picture && picture === c.name &&
+                                    <Popover placement="right" isOpen={true} target={`name-${idx}`} fade={false}>
+                                        <PopoverHeader>{c.name}</PopoverHeader>
+                                        <PopoverBody>
+                                            <a href={`https://witcher.fandom.com/wiki/${c.name.replace(/\(\d of \d\)/, '').trim().replace(/ /g, '_')}_(gwent_card)`}>{c.name.replace(/\(\d of \d\)/, '').trim()} on Witcher wiki</a><br/>
+                                            <a href={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} target="_blank" rel="noopener noreferrer"><img className="card-picture" src={`${process.env.PUBLIC_URL}/pictures/${c.picture}`} alt={`Not found: ${c.name}`}/></a>
+                                        </PopoverBody>
+                                    </Popover>
+                                    }
+                                </span>
+                            </td>
+                            <td>{c.type}</td>
+                            <td>{c.details}</td>
+                        </tr>
+                    )}
+                    </tbody>
+                </Table>
             </div>
         );
     }
