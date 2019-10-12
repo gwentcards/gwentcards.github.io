@@ -43,16 +43,6 @@ class App extends React.Component {
         return obj;
     }
 
-    static baseDeckChecked() {
-        const obj = {};
-        for (const c of cards.cards) {
-            if (c.location === 'Base Deck') {
-                obj[c.name] = true;
-            }
-        }
-        return obj;
-    }
-
     static buildHash(checked) {
         const arr = [];
         for (let i = 0; i < cards.cards.length; i++) {
@@ -192,7 +182,7 @@ class App extends React.Component {
         const deck = f.deck || 'all';
         const territory = (f.territory || '').trim().toLocaleLowerCase();
         const name = (f.name || '').trim().toLocaleLowerCase();
-        const location = (f.location || '').trim().toLocaleLowerCase();
+        const type = (f.type || '').trim().toLocaleLowerCase();
         const details = (f.details || '').trim().toLocaleLowerCase();
 
         return cards.cards.filter(c => {
@@ -212,7 +202,7 @@ class App extends React.Component {
         })
             .filter(c => App.containsFilter(c.territory, territory))
             .filter(c => App.containsFilter(c.name, name))
-            .filter(c => App.containsFilter(c.location, location))
+            .filter(c => App.containsFilter(c.type, type))
             .filter(c => App.containsFilter(c.details, details));
     }
 
@@ -290,9 +280,9 @@ class App extends React.Component {
                         </th>
                         <th>
                             <InputGroup size="sm">
-                                <InputGroupAddon addonType="prepend">{this.sortButton('location')}</InputGroupAddon>
-                                <Input bsSize="sm" placeholder="Location" value={f.location || ''} onChange={this.updateFilter.bind(this, 'location')}/>
-                                <InputGroupAddon addonType="append" title="Clear location filter"><Button onClick={this.clearFilter.bind(this, 'location')}>x</Button></InputGroupAddon>
+                                <InputGroupAddon addonType="prepend">{this.sortButton('type')}</InputGroupAddon>
+                                <Input bsSize="sm" placeholder="Type" value={f.type || ''} onChange={this.updateFilter.bind(this, 'type')}/>
+                                <InputGroupAddon addonType="append" title="Clear type filter"><Button onClick={this.clearFilter.bind(this, 'type')}>x</Button></InputGroupAddon>
                             </InputGroup>
                         </th>
                         <th>
@@ -327,7 +317,7 @@ class App extends React.Component {
                                     }
                                 </span>
                             </td>
-                            <td>{c.location}</td>
+                            <td>{c.type}</td>
                             <td>{c.details}</td>
                         </tr>
                     )}
