@@ -36,11 +36,19 @@ fs.readFile('cards.txt', 'utf8', (err, data) => {
 
     arr.sort((a, b) => a.name.localeCompare(b.name));
 
-    fs.writeFile('src/data/cards.json', JSON.stringify({cards: arr}, null, 2), err => {
+    const json = JSON.stringify({cards: arr}, null, 2);
+    fs.writeFile('src/data/cards.json', json, err => {
         if (err) {
-            console.error('Unable to write JSON data to cards.json', err);
+            console.error('Unable to write JSON data to src/data/cards.json', err);
         } else {
-            console.log('Wrote JSON data to cards.json');
+            console.log('Wrote JSON data to src/data/cards.json, now writing to public/cards.json');
+            fs.writeFile('public/cards.json', json, err => {
+                if (err) {
+                    console.error('Unable to write JSON data to public/cards.json', err);
+                } else {
+                    console.log('Wrote JSON data to public/cards.json');
+                }
+            });
         }
     });
 });

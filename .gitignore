@@ -26,6 +26,7 @@ yarn-error.log*
 
 # cards.json should be generated
 src/data/cards.json
+public/cards.json
 
 # pictures should be generated
 public/pictures/
