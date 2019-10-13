@@ -1,5 +1,5 @@
 # The Witcher 3 Gwent cards checklist
-Hosted here: https://vzx.github.io/gwentcards/
+Hosted here: https://gwentcards.github.io/
 
 A checklist webapp for Gwent cards in The Witcher 3. The collected cards are stored in the URL in the address bar, for
 easy portability.
