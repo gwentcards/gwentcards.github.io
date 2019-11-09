@@ -1,5 +1,6 @@
 const fs = require('fs');
 const sha1 = require('js-sha1');
+const Papa = require('papaparse');
 
 try {
     fs.mkdirSync('src/data/');
@@ -7,32 +8,45 @@ try {
     if (err.code !== 'EEXIST') { throw err }
 }
 
-fs.readFile('cards.txt', 'utf8', (err, data) => {
-    console.log('Reading cards.txt');
+fs.readFile('cards.csv', 'utf8', (err, data) => {
+    console.log('Reading cards.csv');
     if (err) {
-        console.error('Error reading cards.txt', err);
+        console.error('Error reading cards.csv', err);
         return;
     }
 
-    const lines = data.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n').slice(1);
-    console.log(`Parsing ${lines.length} lines`);
+    const results = Papa.parse(data, {
+        header: false,
+        delimiter: ',',
+        skipEmptyLines: true
+    });
+
+    if (results.errors && results.errors.length > 0) {
+        console.log(`Encountered ${results.errors.length} errors during CSV parsing:`);
+        for (const error of results.errors) {
+            console.log('    ', error);
+        }
+        return;
+    }
+
+    console.log(`Parsed ${results.data.length} CSV rows; metadata:`, results.meta);
+
 
     const arr = [];
-    for (const line of lines) {
-        const trimmed = line.trim();
-        if (trimmed.length === 0) {
-            // Skip header
+    var header = true;
+    for (const row of results.data) {
+        if (header) {
+            // skip header
+            header = false;
             continue;
         }
-        const cols = trimmed.split('\t');
-        let [deck, territory, name, type, details, picture] = cols;
-        if (details.startsWith('\"') && details.endsWith('\"')) {
-            details = details.slice(1, -1)
-        }
+        const [deck, territory, name, type, details, picture] = row;
 
         arr.push({deck: deck.trim(), territory: territory.trim(), name: name.trim(), type: type.trim(), details: details.trim(), picture: sha1(picture.trim()) + '.png'});
+
     }
-    console.log(`Parsed ${arr.length} rows`);
+
+    console.log(`Processed ${arr.length} rows`);
 
     arr.sort((a, b) => a.name.localeCompare(b.name));
 
