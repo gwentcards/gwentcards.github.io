@@ -1,26 +1,10 @@
-const fs = require('fs');
 const https = require('https');
+const parser = require('./cards-csv-parser');
 
-fs.readFile('cards.txt', 'utf8', (err, data) => {
-    console.log('Reading cards.txt');
-    if (err) {
-        console.error('Error reading cards.txt', err);
-        return;
-    }
+parser.readCardsCsv(data => {
+    for (const row of data) {
+        const name = row.name;
 
-    const lines = data.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n').slice(1);
-    console.log(`Parsing ${lines.length} lines`);
-
-    let i = 0;
-    for (const line of lines) {
-        i++;
-        const trimmed = line.trim();
-        if (trimmed.length === 0) {
-            // Skip header
-            continue;
-        }
-        const cols = trimmed.split('\t');
-        const [, , name, , , ] = cols;
         const underscored = name.replace(/\(\d of \d\)/, '').trim().replace(/ /g, '_');
         const wiki = `https://witcher.fandom.com/wiki/${underscored}_(gwent_card)`;
 
@@ -32,5 +16,5 @@ fs.readFile('cards.txt', 'utf8', (err, data) => {
             console.error(`Error ${name} ${wiki}`, err);
         }).end();
     }
-    console.log('Check of all Wiki links initiated')
+    console.log(`Check of ${data.length} Wiki links initiated`)
 });

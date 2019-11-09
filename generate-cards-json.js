@@ -1,6 +1,5 @@
 const fs = require('fs');
-const sha1 = require('js-sha1');
-const Papa = require('papaparse');
+const parser = require('./cards-csv-parser');
 
 try {
     fs.mkdirSync('src/data/');
@@ -8,47 +7,17 @@ try {
     if (err.code !== 'EEXIST') { throw err }
 }
 
-fs.readFile('cards.csv', 'utf8', (err, data) => {
-    console.log('Reading cards.csv');
-    if (err) {
-        console.error('Error reading cards.csv', err);
-        return;
-    }
-
-    const results = Papa.parse(data, {
-        header: false,
-        delimiter: ',',
-        skipEmptyLines: true
-    });
-
-    if (results.errors && results.errors.length > 0) {
-        console.log(`Encountered ${results.errors.length} errors during CSV parsing:`);
-        for (const error of results.errors) {
-            console.log('    ', error);
-        }
-        return;
-    }
-
-    console.log(`Parsed ${results.data.length} CSV rows; metadata:`, results.meta);
-
-
+parser.readCardsCsv(data => {
     const arr = [];
-    var header = true;
-    for (const row of results.data) {
-        if (header) {
-            // skip header
-            header = false;
-            continue;
-        }
-        const [deck, territory, name, type, details, picture] = row;
-
-        arr.push({deck: deck.trim(), territory: territory.trim(), name: name.trim(), type: type.trim(), details: details.trim(), picture: sha1(picture.trim()) + '.png'});
-
+    for (const row of data) {
+        arr.push({
+            deck: row.deck,
+            territory: row.territory,
+            name: row.name,
+            type: row.type,
+            details: row.details,
+            picture: row.pictureTarget});
     }
-
-    console.log(`Processed ${arr.length} rows`);
-
-    arr.sort((a, b) => a.name.localeCompare(b.name));
 
     const json = JSON.stringify({cards: arr}, null, 2);
     fs.writeFile('src/data/cards.json', json, err => {

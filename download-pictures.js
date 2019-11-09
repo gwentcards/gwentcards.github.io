@@ -1,6 +1,6 @@
 const fs = require('fs');
 const https = require('https');
-const sha1 = require('js-sha1');
+const parser = require('./cards-csv-parser');
 
 try {
     fs.mkdirSync('public/pictures/');
@@ -8,32 +8,16 @@ try {
     if (err.code !== 'EEXIST') { throw err }
 }
 
-fs.readFile('cards.txt', 'utf8', (err, data) => {
-    console.log('Reading cards.txt');
-    if (err) {
-        console.error('Error reading cards.txt', err);
-        return;
-    }
+parser.readCardsCsv(data => {
+    for (const row of data) {
+        const pictureSource = row.pictureSource;
+        const pictureTarget = row.pictureTarget;
+        const filename = `public/pictures/${pictureTarget}`;
 
-    const lines = data.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n').slice(1);
-    console.log(`Parsing ${lines.length} lines`);
-
-    let i = 0;
-    for (const line of lines) {
-        i++;
-        const trimmed = line.trim();
-        if (trimmed.length === 0) {
-            // Skip header
-            continue;
-        }
-        const cols = trimmed.split('\t');
-        const [, , , , , picture] = cols;
-        const filename = `public/pictures/${sha1(picture.trim())}.png`;
-
-        console.log(`[${i}/${lines.length}] Downloading ${picture} to ${filename}`);
+        console.log(`[${i}/${lines.length}] Downloading ${pictureSource} to ${filename}`);
 
         const file = fs.createWriteStream(filename);
-        https.get(picture, response => {
+        https.get(pictureSource, response => {
             response.pipe(file);
             file.on('finish', () => file.close());
         }).on('error', err => { // Handle errors
@@ -41,5 +25,5 @@ fs.readFile('cards.txt', 'utf8', (err, data) => {
             fs.unlink(filename); // Delete the file async. (But we don't check the result)
         });
     }
-    console.log('Download of all pictures initiated')
+    console.log(`Download of ${data.length} pictures initiated`)
 });
