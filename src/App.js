@@ -350,7 +350,7 @@ class App extends React.Component {
                 <div className="row mb-2"><div className="col text-center small">
                     <p>Pictures and a lot of information taken from <a href="https://witcher.fandom.com/">Witcher Wiki | FANDOM powered by Wikia</a> under <a href="https://www.fandom.com/licensing">CC BY-SA license</a>.</p>
                     <p><a href="https://witcher.fandom.com/wiki/Collect_%27Em_All">Collect 'Em All quest</a> | Card Collector achievement: <a href="https://witcher.fandom.com/wiki/Card_Collector">on wiki</a> / <a href="https://www.trueachievements.com/a200110/card-collector-achievement">on TrueAchievements</a>.</p>
-                    <p>Based on the PC version of The Witcher 3: Wild Hunt - Game of the Year Edition v1.32 | <a href="https://github.com/gwentcards/gwentcards.github.io/issues/new">report issue on GitHub</a>.</p>
+                    <p>Based on the PC version of The Witcher 3: Wild Hunt - Game of the Year Edition v1.32 | <a href="https://github.com/gwentcards/gwentcards.github.io/issues/new/choose">report issue on GitHub</a>.</p>
                     <p>Card data: <a href={`${process.env.PUBLIC_URL}/cards.json`}>in JSON format</a> | <a href="https://github.com/gwentcards/gwentcards.github.io/blob/develop/cards.csv">in CSV format</a>.</p>
                     <p><a href="https://github.com/gwentcards/gwentcards.github.io/"><img src={GithubMark} alt="Source code on Github" title="Source code on Github"/></a></p>
                 </div></div>
