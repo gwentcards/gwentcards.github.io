@@ -5,10 +5,10 @@
   "homepage": "https://gwentcards.github.io/",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1",
-    "react-scripts": "3.1.2",
-    "reactstrap": "^8.0.1"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0",
+    "reactstrap": "^8.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
