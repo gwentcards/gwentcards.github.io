@@ -8,6 +8,7 @@ easy portability.
 - Generate the `cards.json`: `yarn run generate-json`
 - Download pictures from the Wiki: `yarn run download-pictures`
 - Check card names and see if Wiki articles exist: `yarn run check-wiki-links`
+- Start locally: `yarn start`
 - Create a production build: `yarn build`
 - Deploy to Github Pages: `yarn run deploy`
 
