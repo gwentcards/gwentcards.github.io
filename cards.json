@@ -13,7 +13,7 @@
       "territory": "Skellige",
       "name": "Arachas (1 of 3)",
       "type": "Buy from Trader",
-      "details": "Arinbjorn, Innkeeper",
+      "details": "Ard Skellig, Arinbjorn, Innkeeper",
       "picture": "463e19310391a322d848e824691022a5b542b5bf.png"
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "deck": "Nilfgaard",
-      "territory": "Velen",
+      "territory": "Random",
       "name": "Assire var Anahid",
       "type": "Win from NPC",
       "details": "Randomly earned",
@@ -101,7 +101,7 @@
       "territory": "Velen",
       "name": "Black Infantry Archer (1 of 2)",
       "type": "Buy from Trader",
-      "details": "Claywich Village, Trader (first rescue Trader at a bandit camp North-East of Claywitch)",
+      "details": "Claywich Village, Trader (first rescue at persons in distress marker on the large island to the east of Oreton)",
       "picture": "e3c6707134408780c872e7311034b4ae96fe4ad4.png"
     },
     {
@@ -114,10 +114,10 @@
     },
     {
       "deck": "Northern Realms",
-      "territory": "White Orchard",
+      "territory": "Base Deck",
       "name": "Blue Stripes Commando (1 of 3)",
-      "type": "Buy from Trader",
-      "details": "White Orchard Tavern, Innkeeperess (or Trader outside)",
+      "type": "Base Deck",
+      "details": "Included at start of game",
       "picture": "4d78672096fbf2db7a8bb28a2e319b724cf90e9d.png"
     },
     {
@@ -130,10 +130,10 @@
     },
     {
       "deck": "Northern Realms",
-      "territory": "Base Deck",
+      "territory": "White Orchard",
       "name": "Blue Stripes Commando (3 of 3)",
-      "type": "Base Deck",
-      "details": "Included at start of game",
+      "type": "Buy from Trader",
+      "details": "White Orchard Tavern, Innkeeperess (or Trader outside)",
       "picture": "4d78672096fbf2db7a8bb28a2e319b724cf90e9d.png"
     },
     {
@@ -141,7 +141,7 @@
       "territory": "Skellige",
       "name": "Botchling",
       "type": "Buy from Trader",
-      "details": "Kaer Trolde Harbor, New Port Inn, Innkeeper",
+      "details": "Ard Skellig, Kaer Trolde Harbor, New Port Inn, Innkeeper",
       "picture": "039e44fb401df2c99fb7def54b32d7dad9a2f863.png"
     },
     {
@@ -205,7 +205,7 @@
       "territory": "Random",
       "name": "Clear Weather (2 of 2)",
       "type": "Win from NPC",
-      "details": "Randomly earned",
+      "details": "Included at start of game OR Randomly earned",
       "picture": "a5297d760f3aca96a06b02384706c9fe2085d4e5.png"
     },
     {
@@ -221,7 +221,7 @@
       "territory": "Velen",
       "name": "Commander's Horn (1 of 3)",
       "type": "Buy from Trader",
-      "details": "Inn at the Crossroads, Innkeeper",
+      "details": "Inn at the Crossroads, Innkeeper (can appear a 2nd time after inventory refresh)",
       "picture": "4a76196097d31e55e74ce3626dfc75525895fca2.png"
     },
     {
@@ -229,7 +229,7 @@
       "territory": "Novigrad",
       "name": "Commander's Horn (2 of 3)",
       "type": "Buy from Trader",
-      "details": "Passiflora, Marquise Serenity",
+      "details": "Passiflora, Marquise Serenity (note: card could be missing)",
       "picture": "4a76196097d31e55e74ce3626dfc75525895fca2.png"
     },
     {
@@ -253,7 +253,7 @@
       "territory": "Velen",
       "name": "Crinfrid Reavers Dragon Hunter (2 of 3)",
       "type": "Buy from Trader",
-      "details": "Claywich Village, Trader (first rescue Trader at a bandit camp North-East of Claywitch)",
+      "details": "Claywich Village, Trader (first rescue at persons in distress marker on the large island to the east of Oreton)",
       "picture": "c21a7af36439aebd45c0d737a6432371bf8989bf.png"
     },
     {
@@ -285,7 +285,7 @@
       "territory": "Skellige",
       "name": "Crone: Whispess",
       "type": "Buy from Trader",
-      "details": "Arinbjorn, Innkeeper",
+      "details": "Ard Skellig, Arinbjorn, Innkeeper",
       "picture": "0c471ce4709abc3627f08e350534398368b4d037.png"
     },
     {
@@ -309,7 +309,7 @@
       "territory": "White Orchard",
       "name": "Decoy (1 of 3)",
       "type": "Buy from Trader",
-      "details": "White Orchard Tavern, Innkeeperess (or Trader outside)",
+      "details": "White Orchard Tavern, Innkeeperess (or Trader outside after prologue)",
       "picture": "f729bc5f0eb0ec2f29f80154a18660c820782e46.png"
     },
     {
@@ -317,7 +317,7 @@
       "territory": "Velen",
       "name": "Decoy (2 of 3)",
       "type": "Buy from Trader",
-      "details": "Crow's Perch, Quartermaster's Baron's Store",
+      "details": "Crow's Perch, Quartermaster's Baron's Store (can appear a 2nd time after inventory refresh)",
       "picture": "f729bc5f0eb0ec2f29f80154a18660c820782e46.png"
     },
     {
@@ -325,7 +325,7 @@
       "territory": "Novigrad (Gustfields)",
       "name": "Decoy (3 of 3)",
       "type": "Buy from Trader",
-      "details": "Seven Cats Inn, Innkeeper",
+      "details": "Seven Cats Inn, Innkeeper (note: card could be missing)",
       "picture": "f729bc5f0eb0ec2f29f80154a18660c820782e46.png"
     },
     {
@@ -381,7 +381,7 @@
       "territory": "Skellige",
       "name": "Draug",
       "type": "Gwent Quest",
-      "details": "Gwent: Skellige Style, Crach an Craite, Kaer Trolde, Ard Skellig",
+      "details": "Gwent: Skellige Style, Ard Skellig, Kaer Trolde, Crach an Craite",
       "picture": "9c1f8e3121068a5efb080b21f9d1f9ef347d4631.png"
     },
     {
@@ -421,7 +421,7 @@
       "territory": "Skellige",
       "name": "Earth Elemental",
       "type": "Buy from Trader",
-      "details": "Kaer Trolde Harbor, New Port Inn, Innkeeper",
+      "details": "Ard Skellig, Kaer Trolde Harbor, New Port Inn, Innkeeper",
       "picture": "f6e651387a85089554e50e8635fbc574a1731cf5.png"
     },
     {
@@ -516,8 +516,8 @@
       "deck": "Monsters",
       "territory": "Base Deck",
       "name": "Eredin: Commander of the Red Riders",
-      "type": "Base Deck",
-      "details": "Included at start of game",
+      "type": "Buy from Trader",
+      "details": "Kaer Trolde Harbor, New Port Inn, Innkeeper OR Included at start of game",
       "picture": "f66fa0c2b06402d717bb62ed201fea20f9c51b7e.png"
     },
     {
@@ -532,8 +532,8 @@
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Eredin: King of the Wild Hunt",
-      "type": "Buy from Trader",
-      "details": "Kaer Trolde Harbor, New Port Inn, Innkeeper",
+      "type": "Base Deck",
+      "details": "Included at start of game OR Kaer Trolde Harbor, New Port Inn, Innkeeper",
       "picture": "39301ccdbfef951c561da72671959a517d43370e.png"
     },
     {
@@ -557,7 +557,7 @@
       "territory": "Velen",
       "name": "Etolian Auxiliary Archers (2 of 2)",
       "type": "Buy from Trader",
-      "details": "Claywich Village, Trader (first rescue Trader at a bandit camp North-East of Claywitch)",
+      "details": "Claywich Village, Trader (first rescue at persons in distress marker on the large island to the east of Oreton)",
       "picture": "35ac063d4e58ead03b7defcef7ddb5a9753973cd.png"
     },
     {
@@ -565,7 +565,7 @@
       "territory": "Skellige",
       "name": "Fiend",
       "type": "Buy from Trader",
-      "details": "Arinbjorn, Innkeeper",
+      "details": "Ard Skellig, Arinbjorn, Innkeeper",
       "picture": "a2359a614fa727a637fad1379fa7af684b071214.png"
     },
     {
@@ -612,8 +612,8 @@
       "deck": "Northern Realms",
       "territory": "Palace of Vizima",
       "name": "Foltest: The Siegemaster",
-      "type": "Vizima Palace Couryard",
-      "details": "Nilfgaardian Nobleman",
+      "type": "Win from NPC",
+      "details": "Vizima Palace Couryard, Nilfgaardian Nobleman",
       "picture": "68163360d836a817dc63986de1feb2b70ca19f05.png"
     },
     {
@@ -885,7 +885,7 @@
       "territory": "Skellige",
       "name": "Iorveth",
       "type": "Secondary Quest",
-      "details": "Shock Therapy, Gedyneith, Ard Skellig",
+      "details": "Shock Therapy, Ard Skellig, Gedyneith",
       "picture": "78b3462090c641d30a74b6303c9bfa1b619e0689.png"
     },
     {
@@ -949,7 +949,7 @@
       "territory": "Skellige",
       "name": "Leshen",
       "type": "Gwent Quest",
-      "details": "Gwent: Skellige Style, Ermion, Gedyneith, Ard Skellig",
+      "details": "Gwent: Skellige Style, Ard Skellig, Gedyneith, Ermion",
       "picture": "2d3106c32a084567c500776f957cc5c5beef60ef.png"
     },
     {
@@ -1037,7 +1037,7 @@
       "territory": "Skellige",
       "name": "Mysterious Elf",
       "type": "Gwent Quest",
-      "details": "Gwent: Skellige Style, Gremita, Gedyneith, Ard Skellig",
+      "details": "Gwent: Skellige Style, Ard Skellig, Gedyneith, Gremist",
       "picture": "28af97275162697e4979b657d87f58e3fcfb11be.png"
     },
     {
@@ -1069,7 +1069,7 @@
       "territory": "Skellige",
       "name": "Nekker (1 of 3)",
       "type": "Secondary Quest",
-      "details": "Following the Thread, loot Hammonds corpse on Trottheim",
+      "details": "Following the Thread, Faroe, Trottheim, loot Hammonds corpse",
       "picture": "d1dc6c9c7879951be17f7dc216343cbcc517eb44.png"
     },
     {
@@ -1107,7 +1107,7 @@
     {
       "deck": "Northern Realms",
       "territory": "Base Deck",
-      "name": "Poor Fucking Infantry (1 of 3)",
+      "name": "Poor Fucking Infantry (1 of 4)",
       "type": "Base Deck",
       "details": "Included at start of game",
       "picture": "6cca0446e59d56f61edc7e596a8f6225704559d3.png"
@@ -1115,7 +1115,7 @@
     {
       "deck": "Northern Realms",
       "territory": "Base Deck",
-      "name": "Poor Fucking Infantry (2 of 3)",
+      "name": "Poor Fucking Infantry (2 of 4)",
       "type": "Base Deck",
       "details": "Included at start of game",
       "picture": "6cca0446e59d56f61edc7e596a8f6225704559d3.png"
@@ -1123,9 +1123,17 @@
     {
       "deck": "Northern Realms",
       "territory": "Velen",
-      "name": "Poor Fucking Infantry (3 of 3)",
+      "name": "Poor Fucking Infantry (3 of 4)",
       "type": "Buy from Trader",
       "details": "Lindenvale, Merchant",
+      "picture": "6cca0446e59d56f61edc7e596a8f6225704559d3.png"
+    },
+    {
+      "deck": "Northern Realms",
+      "territory": "Velen",
+      "name": "Poor Fucking Infantry (4 of 4)",
+      "type": "Buy from Trader",
+      "details": "Midcopse, Shopkeeper",
       "picture": "6cca0446e59d56f61edc7e596a8f6225704559d3.png"
     },
     {
@@ -1141,7 +1149,7 @@
       "territory": "Velen",
       "name": "Puttkammer",
       "type": "Buy from Trader",
-      "details": "Claywich Village, Trader (first rescue Trader at a bandit camp North-East of Claywitch)",
+      "details": "Claywich Village, Trader (first rescue at persons in distress marker on the large island to the east of Oreton)",
       "picture": "07a11c4c3976378705a8bff36f9a298d7d08074b.png"
     },
     {
@@ -1221,7 +1229,7 @@
       "territory": "Skellige",
       "name": "Scorch (2 of 3)",
       "type": "Buy from Trader",
-      "details": "Kaer Trolde Harbor, New Port Inn, Innkeeper",
+      "details": "Ard Skellig, Kaer Trolde Harbor, New Port Inn, Innkeeper (can appear a 2nd time after inventory refresh)",
       "picture": "a97e2602c5c29e5e7c62ba6e27215e2c68d29f9d.png"
     },
     {
@@ -1229,7 +1237,7 @@
       "territory": "Skellige",
       "name": "Scorch (3 of 3)",
       "type": "Buy from Trader",
-      "details": "An Skellig, Urialla Village, Innkeeper",
+      "details": "An Skellig, Urialla Village, Innkeeper (note: card could be missing)",
       "picture": "a97e2602c5c29e5e7c62ba6e27215e2c68d29f9d.png"
     },
     {
@@ -1309,7 +1317,7 @@
       "territory": "Velen",
       "name": "Sweers",
       "type": "Buy from Trader",
-      "details": "Claywich Village, Trader (first rescue Trader at a bandit camp North-East of Claywitch)",
+      "details": "Claywich Village, Trader (first rescue at persons in distress marker on the large island to the east of Oreton)",
       "picture": "646167cfadbd20381917bbc367a500a33bf78562.png"
     },
     {
@@ -1317,7 +1325,7 @@
       "territory": "Skellige",
       "name": "Thaler",
       "type": "Buy from Trader",
-      "details": "Arinbjorn, Innkeeper",
+      "details": "Ard Skellig, Arinbjorn, Innkeeper",
       "picture": "315879e4b87f79e68cf63737a9b362f6d7448261.png"
     },
     {
@@ -1341,7 +1349,7 @@
       "territory": "Random",
       "name": "Torrential Rain (2 of 2)",
       "type": "Win from NPC",
-      "details": "Randomly earned",
+      "details": "Included at start of game OR Randomly earned",
       "picture": "ea65b1ef351bda6c5862219e716db76cc86b35af.png"
     },
     {
@@ -1413,7 +1421,7 @@
       "territory": "Skellige",
       "name": "Vampire: Katakan",
       "type": "Gwent Quest",
-      "details": "Gwent: Skellige Style, Jarl Madman Lugos, Kaer Muire, Ard Skellig",
+      "details": "Gwent: Skellige Style, Ard Skellig, Kaer Muire, Jarl Madman Lugos",
       "picture": "a71ede99132ebb9f2817799b53f3a65e379def86.png"
     },
     {
@@ -1517,7 +1525,7 @@
       "territory": "Skellige",
       "name": "Yaevinn",
       "type": "Gwent Quest",
-      "details": "Gwent: Skellige Style, Sjusta the Tailor, Kaer Trolde Harbor, Ard Skellig",
+      "details": "Gwent: Skellige Style, Ard Skellig, Kaer Trolde Harbor, Sjusta the Tailor",
       "picture": "684fea2670768c046109cc6f9e1f423d35394f74.png"
     },
     {
@@ -1565,7 +1573,7 @@
       "territory": "White Orchard",
       "name": "Zoltan Chivay",
       "type": "Win from Gwent Teacher",
-      "details": "White Orchard Tavern, Aldert Geert OR found under the Hanged Man's Tree",
+      "details": "White Orchard Tavern, Aldert Geert OR found under the Hanged Man's Tree after prologue",
       "picture": "a10bad53f8102b7b4d502dfb78551c4cd2da44c3.png"
     }
   ]
