@@ -9,12 +9,14 @@ try {
 }
 
 parser.readCardsCsv(data => {
+    let i = 0;
     for (const row of data) {
+        i++;
         const pictureSource = row.pictureSource;
         const pictureTarget = row.pictureTarget;
         const filename = `public/pictures/${pictureTarget}`;
 
-        console.log(`[${i}/${lines.length}] Downloading ${pictureSource} to ${filename}`);
+        console.log(`[${i}/${data.length}] Downloading ${pictureSource} to ${filename}`);
 
         const file = fs.createWriteStream(filename);
         https.get(pictureSource, response => {
