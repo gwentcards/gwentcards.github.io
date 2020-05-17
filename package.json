@@ -39,6 +39,6 @@
   "devDependencies": {
     "gh-pages": "^2.2.0",
     "js-sha1": "^0.6.0",
-    "papaparse": "^5.1.1"
+    "papaparse": "^5.2.0"
   }
 }
