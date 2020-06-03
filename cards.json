@@ -195,7 +195,7 @@
     {
       "deck": "Neutral",
       "territory": "Base Deck",
-      "name": "Clear Weather (1 of 2)",
+      "name": "Clear Weather (1 of 3)",
       "type": "Base Deck",
       "details": "Included at start of game",
       "picture": "a5297d760f3aca96a06b02384706c9fe2085d4e5.png"
@@ -203,7 +203,15 @@
     {
       "deck": "Neutral",
       "territory": "Random",
-      "name": "Clear Weather (2 of 2)",
+      "name": "Clear Weather (2 of 3)",
+      "type": "Win from NPC",
+      "details": "Included at start of game OR Randomly earned",
+      "picture": "a5297d760f3aca96a06b02384706c9fe2085d4e5.png"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Random",
+      "name": "Clear Weather (3 of 3)",
       "type": "Win from NPC",
       "details": "Included at start of game OR Randomly earned",
       "picture": "a5297d760f3aca96a06b02384706c9fe2085d4e5.png"
@@ -1339,7 +1347,7 @@
     {
       "deck": "Neutral",
       "territory": "Base Deck",
-      "name": "Torrential Rain (1 of 2)",
+      "name": "Torrential Rain (1 of 3)",
       "type": "Base Deck",
       "details": "Included at start of game",
       "picture": "ea65b1ef351bda6c5862219e716db76cc86b35af.png"
@@ -1347,7 +1355,15 @@
     {
       "deck": "Neutral",
       "territory": "Random",
-      "name": "Torrential Rain (2 of 2)",
+      "name": "Torrential Rain (2 of 3)",
+      "type": "Win from NPC",
+      "details": "Included at start of game OR Randomly earned",
+      "picture": "ea65b1ef351bda6c5862219e716db76cc86b35af.png"
+    },
+    {
+      "deck": "Neutral",
+      "territory": "Random",
+      "name": "Torrential Rain (3 of 3)",
       "type": "Win from NPC",
       "details": "Included at start of game OR Randomly earned",
       "picture": "ea65b1ef351bda6c5862219e716db76cc86b35af.png"
