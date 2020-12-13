@@ -239,12 +239,15 @@ class App extends React.Component {
         const picture = this.state.picture;
         return (
             <div className="App container-fluid">
-                <div className="row mb-2">
+                <div className="row no-gutters mb-2">
                     <div className="col">
-                        <Button size="sm" onClick={this.checkAll.bind(this, true)}>Check all visible</Button>{' '}
+                        {navigator && navigator.clipboard && navigator.clipboard.writeText &&
+                            <Button size="sm" className="mr-3" onClick={() => navigator.clipboard.writeText(window.location)} title="Copy page location to the clipboard, so you can save it or bookmark it">Copy page location</Button>
+                        }
+                        <Button size="sm" className="mr-1" onClick={this.checkAll.bind(this, true)}>Check all visible</Button>
                         <Button size="sm" onClick={this.checkAll.bind(this, false)}>Uncheck all visible</Button>
                     </div>
-                    <div className="col text-right">
+                    <div className="col-auto text-right">
                         Showing {filtered.length} of {totalCount} cards. Collected {totalCollected} ({App.percentage(totalCollected, totalCount)}%).
                     </div>
                 </div>
