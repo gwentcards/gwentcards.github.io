@@ -30,3 +30,5 @@ public/cards.json
 
 # pictures should be generated
 public/pictures/
+
+.eslintcache
