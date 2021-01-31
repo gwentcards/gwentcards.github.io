@@ -10,6 +10,10 @@
     "react-scripts": "^4.0.1",
     "reactstrap": "^8.9.0"
   },
+  "resolutions": {
+    "node-notifier": "^8.0.1",
+    "immer": "^8.0.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
