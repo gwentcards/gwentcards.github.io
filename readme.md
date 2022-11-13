@@ -5,11 +5,11 @@ A checklist webapp for Gwent cards in The Witcher 3. The collected cards are sto
 easy portability.
 
 ## Development tools
-- Generate the `cards.json`: `yarn run generate-json`
-- Download pictures from the Wiki: `yarn run download-pictures`
-- Check card names and see if Wiki articles exist: `yarn run check-wiki-links`
-- Start locally: `yarn start`
-- Create a production build: `yarn build`
-- Deploy to Github Pages: `yarn run deploy`
+- Generate the `cards.json`: `npm run generate-json`
+- Download pictures from the Wiki: `npm run download-pictures`
+- Check card names and see if Wiki articles exist: `npm run check-wiki-links`
+- Start locally: `npm run start`
+- Create a production build: `npm run build`
+- Deploy to Github Pages: `npm run deploy`
 
 
