@@ -47,7 +47,14 @@ module.exports.readCardsCsv = function (callback) {
 
         console.log(`Processed ${rows.length} rows`);
 
-        rows.sort((a, b) => a.name.localeCompare(b.name));
+        //const expansionSorting = { 'Base game': 0, 'Hearts of Stone': 1, 'Blood and Wine': 2 };
+        const expansionSorting = ['Base game', 'Hearts of Stone', 'Blood and Wine'];
+        rows.sort((l, r) => {
+            if (l.expansion === r.expansion) {
+                return l.name.localeCompare(r.name);
+            }
+            return expansionSorting.indexOf[l.expansion] < expansionSorting.indexOf[r.expansion];
+        });
 
         callback(rows);
     });
