@@ -293,6 +293,7 @@ class App extends React.Component {
                                             <option value="Nilfgaard">Nilfgaard</option>
                                             <option value="Northern Realms">Northern Realms</option>
                                             <option value="Scoia'tael">Scoia'tael</option>
+                                            <option value="Skellige">Skellige</option>
                                         </CustomInput>
                                     </InputGroup>
                                 </th>
