@@ -28,7 +28,7 @@ module.exports.readCardsCsv = function (callback) {
 
 
         const rows = results.data
-            .filter((row, idx) => idx > 0) // Skip header
+            .filter((_, idx) => idx > 0) // Skip header
             .map(row => {
                 const [expansion, deck, territory, name, type, details, pictureUrl] = row;
                 const pictureSource = pictureUrl.trim();
