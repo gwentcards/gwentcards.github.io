@@ -157,22 +157,31 @@ class App extends React.Component {
     }
 
     countCards() {
-        const r = {};
+        const deckCounts = {};
+        const expansionCounts = {}
         const checked = this.state.checked;
         let totalCollected = 0;
         for (const c of cards.cards) {
             const deck = c.deck;
+            const expansion = c.expansion;
             const delta = checked[c.name] ? 1 : 0;
             totalCollected += delta;
 
-            if (!r[deck]) {
-                r[deck] = { collected: delta, total: 1 };
+            if (!deckCounts[deck]) {
+                deckCounts[deck] = { collected: delta, total: 1 };
             } else {
-                r[deck].total++;
-                r[deck].collected += delta;
+                deckCounts[deck].total++;
+                deckCounts[deck].collected += delta;
+            }
+
+            if (!expansionCounts[expansion]) {
+                expansionCounts[expansion] = { collected: delta, total: 1 };
+            } else {
+                expansionCounts[expansion].total++;
+                expansionCounts[expansion].collected += delta;
             }
         }
-        return [totalCollected, r];
+        return [totalCollected, deckCounts, expansionCounts];
     }
 
     static percentage(part, total) {
@@ -184,9 +193,9 @@ class App extends React.Component {
         return `${c}/${t} (${App.percentage(c, t)}%)`;
     }
 
-    static progress(total, counts, deck, color) {
-        const c = counts[deck];
-        const caption = `${deck} ${App.printCardCount(c)}`;
+    static progress(total, counts, key, color) {
+        const c = counts[key];
+        const caption = `${key} ${App.printCardCount(c)}`;
         return <Progress striped bar color={color} max={total} value={c.collected}><span title={caption}>{caption}</span></Progress>
     }
 
@@ -231,7 +240,7 @@ class App extends React.Component {
         const sortDir = sort.dir === 'asc' ? 1 : -1;
         filtered.sort((a, b) => this.compare(a, b, sortField, sortDir));
 
-        const [totalCollected, counts] = this.countCards();
+        const [totalCollected, deckCounts, expansionCounts] = this.countCards();
         const totalCount = cards.cards.length;
 
         const picture = this.state.picture;
@@ -249,15 +258,27 @@ class App extends React.Component {
                         Showing {filtered.length} of {totalCount} cards. Collected {totalCollected} ({App.percentage(totalCollected, totalCount)}%).
                     </div>
                 </div>
-                <div className="row mb-2"><div className="col">
-                    <Progress multi max={cards.cards.length}>
-                        {App.progress(totalCount, counts, 'Nilfgaard', 'warning')}
-                        {App.progress(totalCount, counts, 'Monsters', 'danger')}
-                        {App.progress(totalCount, counts, 'Northern Realms', 'primary')}
-                        {App.progress(totalCount, counts, 'Scoia\'tael', 'success')}
-                        {App.progress(totalCount, counts, 'Neutral', 'secondary')}
-                    </Progress>
-                </div></div>
+                <div className="row mb-1">
+                    <div className="col">
+                        <Progress multi max={cards.cards.length}>
+                            {App.progress(totalCount, deckCounts, 'Nilfgaard', 'warning')}
+                            {App.progress(totalCount, deckCounts, 'Monsters', 'danger')}
+                            {App.progress(totalCount, deckCounts, 'Northern Realms', 'primary')}
+                            {App.progress(totalCount, deckCounts, 'Scoia\'tael', 'success')}
+                            {App.progress(totalCount, deckCounts, 'Skellige', 'info')}
+                            {App.progress(totalCount, deckCounts, 'Neutral', 'secondary')}
+                        </Progress>
+                    </div>
+                </div>
+                <div className="row mb-2">
+                    <div className="col">
+                        <Progress multi max={cards.cards.length}>
+                            {App.progress(totalCount, expansionCounts, 'Base game', 'secondary')}
+                            {App.progress(totalCount, expansionCounts, 'Hearts of Stone', 'primary')}
+                            {App.progress(totalCount, expansionCounts, 'Blood and Wine', 'danger')}
+                        </Progress>
+                    </div>
+                </div>
                 <div className="row mb-2"><div className="col">
                     <Table bordered hover striped responsive size="sm" className="space">
                         <thead>
