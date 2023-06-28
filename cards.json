@@ -1,6 +1,7 @@
 {
   "cards": [
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Albrich",
@@ -9,6 +10,7 @@
       "picture": "f72d2a116cef1fb2600284ac5335eba97f5581c3.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Arachas (1 of 3)",
@@ -17,6 +19,7 @@
       "picture": "463e19310391a322d848e824691022a5b542b5bf.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Arachas (2 of 3)",
@@ -25,6 +28,7 @@
       "picture": "189d95f8548e71f02a5acb760df83bef012d0f7d.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Arachas (3 of 3)",
@@ -33,6 +37,7 @@
       "picture": "566cea669bfdfa183d01a8c79a5307b5a15ce586.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Arachas Behemoth",
@@ -41,6 +46,7 @@
       "picture": "dcd366e76dde5b60779e7cf68de417386f66490e.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Random",
       "name": "Assire var Anahid",
@@ -49,6 +55,7 @@
       "picture": "fe106994fc41d7d6a653b8454caef674ca40938b.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Ballista (1 of 2)",
@@ -57,6 +64,7 @@
       "picture": "11bf144b68dc4704cc64deade8d77a0eb37990c3.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Ballista (2 of 2)",
@@ -65,6 +73,7 @@
       "picture": "74308c82373dde15aa848192a3e0a1d8835d4df6.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Barclay Els",
@@ -73,6 +82,7 @@
       "picture": "1175338e29de917669a0e9d7e94f89352831d953.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Base Deck",
       "name": "Biting Frost (1 of 3)",
@@ -81,6 +91,7 @@
       "picture": "103a22c67f02441f793f442b0933e1ed0577a589.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Base Deck",
       "name": "Biting Frost (2 of 3)",
@@ -89,6 +100,7 @@
       "picture": "103a22c67f02441f793f442b0933e1ed0577a589.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Random",
       "name": "Biting Frost (3 of 3)",
@@ -97,6 +109,7 @@
       "picture": "103a22c67f02441f793f442b0933e1ed0577a589.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Black Infantry Archer (1 of 2)",
@@ -105,6 +118,7 @@
       "picture": "e3c6707134408780c872e7311034b4ae96fe4ad4.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Black Infantry Archer (2 of 2)",
@@ -113,6 +127,7 @@
       "picture": "484b805f87f219955cef260207eddba878865713.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Blue Stripes Commando (1 of 3)",
@@ -121,6 +136,7 @@
       "picture": "4d78672096fbf2db7a8bb28a2e319b724cf90e9d.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Blue Stripes Commando (2 of 3)",
@@ -129,6 +145,7 @@
       "picture": "4d78672096fbf2db7a8bb28a2e319b724cf90e9d.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "White Orchard",
       "name": "Blue Stripes Commando (3 of 3)",
@@ -137,6 +154,7 @@
       "picture": "4d78672096fbf2db7a8bb28a2e319b724cf90e9d.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Botchling",
@@ -145,6 +163,7 @@
       "picture": "039e44fb401df2c99fb7def54b32d7dad9a2f863.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Random",
       "name": "Cahir Mawr Dyffryn aep Ceallach",
@@ -153,6 +172,7 @@
       "picture": "9f30905e4290b7ed486279ee9e130c38786e8689.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "White Orchard",
       "name": "Catapult (1 of 2)",
@@ -161,6 +181,7 @@
       "picture": "b8713f1b4664b0b8645c1252d3843bc6c7b1c930.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Novigrad",
       "name": "Catapult (2 of 2)",
@@ -169,6 +190,7 @@
       "picture": "b8713f1b4664b0b8645c1252d3843bc6c7b1c930.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Celaeno Harpy",
@@ -177,6 +199,7 @@
       "picture": "602f1a407de146d25e42ba8f38a654d0b94eea0a.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Ciaran aep Easnillien",
@@ -185,6 +208,7 @@
       "picture": "81596dfe0f47d6683265c4836737115ca6cc77c1.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad (Grassy Knoll)",
       "name": "Cirilla Fiona Elen Riannon",
@@ -193,6 +217,7 @@
       "picture": "cdaa27ee2a1d747c90125b85dc51c91b749c4135.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Base Deck",
       "name": "Clear Weather (1 of 3)",
@@ -201,6 +226,7 @@
       "picture": "a5297d760f3aca96a06b02384706c9fe2085d4e5.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Random",
       "name": "Clear Weather (2 of 3)",
@@ -209,6 +235,7 @@
       "picture": "a5297d760f3aca96a06b02384706c9fe2085d4e5.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Random",
       "name": "Clear Weather (3 of 3)",
@@ -217,6 +244,7 @@
       "picture": "a5297d760f3aca96a06b02384706c9fe2085d4e5.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Cockatrice",
@@ -225,6 +253,7 @@
       "picture": "0f0a9749f836f1e8377f20c1215f662d19e296ea.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Velen",
       "name": "Commander's Horn (1 of 3)",
@@ -233,6 +262,7 @@
       "picture": "4a76196097d31e55e74ce3626dfc75525895fca2.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad",
       "name": "Commander's Horn (2 of 3)",
@@ -241,6 +271,7 @@
       "picture": "4a76196097d31e55e74ce3626dfc75525895fca2.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad (Oxenfurt)",
       "name": "Commander's Horn (3 of 3)",
@@ -249,6 +280,7 @@
       "picture": "4a76196097d31e55e74ce3626dfc75525895fca2.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "White Orchard",
       "name": "Crinfrid Reavers Dragon Hunter (1 of 3)",
@@ -257,6 +289,7 @@
       "picture": "c21a7af36439aebd45c0d737a6432371bf8989bf.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Velen",
       "name": "Crinfrid Reavers Dragon Hunter (2 of 3)",
@@ -265,6 +298,7 @@
       "picture": "c21a7af36439aebd45c0d737a6432371bf8989bf.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Velen",
       "name": "Crinfrid Reavers Dragon Hunter (3 of 3)",
@@ -273,6 +307,7 @@
       "picture": "c21a7af36439aebd45c0d737a6432371bf8989bf.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Crone: Brewess",
@@ -281,6 +316,7 @@
       "picture": "3f80bcaa0ea0c309d2b3b4a30e9a2ad7c575b343.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Velen",
       "name": "Crone: Weavess",
@@ -289,6 +325,7 @@
       "picture": "e73abe05fe0bf9ea52dc2571df3a377079dd6d15.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Crone: Whispess",
@@ -297,6 +334,7 @@
       "picture": "0c471ce4709abc3627f08e350534398368b4d037.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Cynthia",
@@ -305,6 +343,7 @@
       "picture": "c4393ed45a4ef895b7204e75a038376337a19df6.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad (Gustfields)",
       "name": "Dandelion",
@@ -313,6 +352,7 @@
       "picture": "e4804c690a307022a90611e161e3949444c47bea.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "White Orchard",
       "name": "Decoy (1 of 3)",
@@ -321,6 +361,7 @@
       "picture": "f729bc5f0eb0ec2f29f80154a18660c820782e46.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Velen",
       "name": "Decoy (2 of 3)",
@@ -329,6 +370,7 @@
       "picture": "f729bc5f0eb0ec2f29f80154a18660c820782e46.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad (Gustfields)",
       "name": "Decoy (3 of 3)",
@@ -337,6 +379,7 @@
       "picture": "f729bc5f0eb0ec2f29f80154a18660c820782e46.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Dennis Cranmer",
@@ -345,6 +388,7 @@
       "picture": "d7a5d17bf1bb50ea05b392f741ddfc6d40b9fb04.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Dethmold",
@@ -353,6 +397,7 @@
       "picture": "21c2db2018709b16b23f8cf1340c93bf0104af23.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Dol Blathanna Archer",
@@ -361,6 +406,7 @@
       "picture": "03331a952b6442397fc3e6b49f64dd55c8101698.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Dol Blathanna Scout (1 of 3)",
@@ -369,6 +415,7 @@
       "picture": "467cb753c2c7347e37da919ae3ee6909559e758f.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Dol Blathanna Scout (2 of 3)",
@@ -377,6 +424,7 @@
       "picture": "cfb1ac7f754d0314ec2779e4501b12d0d318ace0.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Dol Blathanna Scout (3 of 3)",
@@ -385,6 +433,7 @@
       "picture": "2df6fddf9d4853ae7a9820333914d30f52f07f14.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Draug",
@@ -393,6 +442,7 @@
       "picture": "9c1f8e3121068a5efb080b21f9d1f9ef347d4631.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Dun Banner Medic",
@@ -401,6 +451,7 @@
       "picture": "1cc87b8598f1d5b0d64cb7dbf42517bd38675049.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Dwarven Skirmisher (1 of 3)",
@@ -409,6 +460,7 @@
       "picture": "227c25af75f4fd8b7fc75500054ccd714b995265.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Dwarven Skirmisher (2 of 3)",
@@ -417,6 +469,7 @@
       "picture": "f7be3205704848e8c309e6556c3b74b5803fd683.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad (Oxenfurt)",
       "name": "Dwarven Skirmisher (3 of 3)",
@@ -425,6 +478,7 @@
       "picture": "d8cd8e9438508e832df65383c54f18ae6ce4c806.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Earth Elemental",
@@ -433,6 +487,7 @@
       "picture": "f6e651387a85089554e50e8635fbc574a1731cf5.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Eithné",
@@ -441,6 +496,7 @@
       "picture": "3cc023aacaa0d3dfb9991987ed489e116a67b733.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Elven Skirmisher (1 of 3)",
@@ -449,6 +505,7 @@
       "picture": "c8bbfaa1fd1068a2096f11aff4a3dfb3f334b702.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Elven Skirmisher (2 of 3)",
@@ -457,6 +514,7 @@
       "picture": "a554170582f6ec6d4792021957aa7e2b7d94cf09.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Skellige",
       "name": "Elven Skirmisher (3 of 3)",
@@ -465,6 +523,7 @@
       "picture": "c37e1998e55a1076bfb436e48af23c952dcb5fa7.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Emhyr var Emreis: Emperor of Nilfgaard",
@@ -473,6 +532,7 @@
       "picture": "d72b82c156bc4804614d021700a682a58b4d6fc0.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Base Deck",
       "name": "Emhyr var Emreis: His Imperial Majesty",
@@ -481,6 +541,7 @@
       "picture": "31e08cc016ff676acb20db6e9e5ba69caacaf090.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Novigrad",
       "name": "Emhyr var Emreis: The Relentless",
@@ -489,6 +550,7 @@
       "picture": "ef3e98ebc9ddd44afa5a8866a7df93deccfed91c.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Skellige",
       "name": "Emhyr var Emreis: The White Flame",
@@ -497,6 +559,7 @@
       "picture": "1dc8adaf3ce805fef337bda8266969262cff2ddb.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Random",
       "name": "Emiel Regis Rohellec Terzieff",
@@ -505,6 +568,7 @@
       "picture": "b5d71ea45505df3cc0c0610e4bd14379e15d7fa7.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Endrega",
@@ -513,6 +577,7 @@
       "picture": "63dd4b8ec66a4078a77be368b6bd6d8c0710ab7f.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Novigrad",
       "name": "Eredin: Bringer of Death",
@@ -521,6 +586,7 @@
       "picture": "79ab88db15511a06d998f0a90df0938d7ce1b1b7.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Base Deck",
       "name": "Eredin: Commander of the Red Riders",
@@ -529,6 +595,7 @@
       "picture": "f66fa0c2b06402d717bb62ed201fea20f9c51b7e.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Velen",
       "name": "Eredin: Destroyer of Worlds",
@@ -537,6 +604,7 @@
       "picture": "751e5726fe8500a448798c5ff8da81bef7fbb260.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Eredin: King of the Wild Hunt",
@@ -545,6 +613,7 @@
       "picture": "39301ccdbfef951c561da72671959a517d43370e.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Novigrad",
       "name": "Esterad Thyssen",
@@ -553,6 +622,7 @@
       "picture": "be476e5816e8a8393587557d014e8fff5d2b1845.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Etolian Auxiliary Archers (1 of 2)",
@@ -561,6 +631,7 @@
       "picture": "46d9a2df9b252d46c2070e5de9fd6de2101213ba.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Etolian Auxiliary Archers (2 of 2)",
@@ -569,6 +640,7 @@
       "picture": "35ac063d4e58ead03b7defcef7ddb5a9753973cd.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Fiend",
@@ -577,6 +649,7 @@
       "picture": "a2359a614fa727a637fad1379fa7af684b071214.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Filavandrel aen Fidhail",
@@ -585,6 +658,7 @@
       "picture": "ad4a0e2949a6eb703aced601c5d10877b1e203e8.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Fire Elemental",
@@ -593,6 +667,7 @@
       "picture": "4b8c9831e06ee288e8b577faf4f0a243317157a1.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Foglet",
@@ -601,6 +676,7 @@
       "picture": "02a6b7b904f308bb981fa574a3e513a80d3c3f94.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Foltest: King of Temeria",
@@ -609,6 +685,7 @@
       "picture": "b4208fb6e57f50afd15f48c747c65ef6fd17c282.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "White Orchard",
       "name": "Foltest: Lord Commander of the North",
@@ -617,6 +694,7 @@
       "picture": "739772c31a60d544767bfec6e590c510192ee953.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Palace of Vizima",
       "name": "Foltest: The Siegemaster",
@@ -625,6 +703,7 @@
       "picture": "68163360d836a817dc63986de1feb2b70ca19f05.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Novigrad",
       "name": "Foltest: The Steel-Forged",
@@ -633,6 +712,7 @@
       "picture": "57d402226bfaf964a19a5e78bd826dd4a0d1a36a.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Forktail",
@@ -641,6 +721,7 @@
       "picture": "024c77b7e874ba8509d197d8b5137e2f8100c8d7.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad (Grassy Knoll)",
       "name": "Francesca Findabair: Daisy of the Valley",
@@ -649,6 +730,7 @@
       "picture": "6e56019083a9365f80c572236d3c3e8b313693dd.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Base Deck",
       "name": "Francesca Findabair: Pureblood Elf",
@@ -657,6 +739,7 @@
       "picture": "7325acce17654b221e9bfc3b6b87b4eb82a71554.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Francesca Findabair: Queen of Dol Blathanna",
@@ -665,6 +748,7 @@
       "picture": "1583239665f18c43c01ec55fed046f616f2dabb5.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Francesca Findabair: The Beautiful",
@@ -673,6 +757,7 @@
       "picture": "b14689232db1b6d5f34cc2e65c4678d5fa337d36.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Frightener",
@@ -681,6 +766,7 @@
       "picture": "2c5c1c3623f9453e36c52192bb8fc2d42a781dd9.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Novigrad",
       "name": "Fringilla Vigo",
@@ -689,6 +775,7 @@
       "picture": "a1f58baee336913d16edeed84c8f8a4649808124.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Gargoyle",
@@ -697,6 +784,7 @@
       "picture": "5458eead16d2f62a41a25e836a3f0f948e0e9992.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad",
       "name": "Geralt of Rivia",
@@ -705,6 +793,7 @@
       "picture": "16dd8f571560f2e53b260777a14710fc938dc5c6.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Ghoul (1 of 3)",
@@ -713,6 +802,7 @@
       "picture": "53e16e64e442af54dae14a2473061b7a303b309e.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Ghoul (2 of 3)",
@@ -721,6 +811,7 @@
       "picture": "5c2b4cb46e557e280a604bbbbac13e96be9b19b8.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Ghoul (3 of 3)",
@@ -729,6 +820,7 @@
       "picture": "be8ac6b8196761f42ad64b1cdce9c6ef722c93c4.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Grave Hag",
@@ -737,6 +829,7 @@
       "picture": "38146eeaf7b05a1c2d27ecf51794ea3d256057b4.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Griffin",
@@ -745,6 +838,7 @@
       "picture": "362d98bdf7ff885b8bbb5519ece22051428d989f.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Harpy",
@@ -753,6 +847,7 @@
       "picture": "df02622bdf72c6eb8d4c7244a2d096d3172af242.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Havekar Healer (1 of 3)",
@@ -761,6 +856,7 @@
       "picture": "73c4ef1f8d7e9cfb64af419aa0894a8916076666.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad (Grassy Knoll)",
       "name": "Havekar Healer (2 of 3)",
@@ -769,6 +865,7 @@
       "picture": "14191bdf469556c0a8d8d87c418da0c122e67201.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Havekar Healer (3 of 3)",
@@ -777,6 +874,7 @@
       "picture": "0dfe6df9137d1b7e5befb85e2ceb9d55793a5868.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad (Gustfields)",
       "name": "Havekar Smuggler (1 of 3)",
@@ -785,6 +883,7 @@
       "picture": "41ec29ce552adb7b11acd262befae73e19afbdc3.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Havekar Smuggler (2 of 3)",
@@ -793,6 +892,7 @@
       "picture": "808b442fef2cad4adbf09686c26b2497b10296a9.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Havekar Smuggler (3 of 3)",
@@ -801,6 +901,7 @@
       "picture": "7036d1f9cd10ceb38a97f26d5f781950367d034a.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Heavy Zerrikanian Fire Scorpion",
@@ -809,6 +910,7 @@
       "picture": "f190a502c380b488a08625b608583148b166d6e5.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Ice Giant",
@@ -817,6 +919,7 @@
       "picture": "2240ce7e6740829af9e16e3db3872aa6d2d12063.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Ida Emean aep Sivney",
@@ -825,6 +928,7 @@
       "picture": "0f5d7aeb42a2041b43ae7cd9161ff3cb2ad1236f.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Imlerith",
@@ -833,6 +937,7 @@
       "picture": "f152c23a56b3a5f93a456d685e0c07e9deb70708.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Base Deck",
       "name": "Impenetrable Fog (1 of 3)",
@@ -841,6 +946,7 @@
       "picture": "8bf2ecc05d821b2e3ccfeaca3f4b0b54e21c7bce.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Base Deck",
       "name": "Impenetrable Fog (2 of 3)",
@@ -849,6 +955,7 @@
       "picture": "8bf2ecc05d821b2e3ccfeaca3f4b0b54e21c7bce.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Random",
       "name": "Impenetrable Fog (3 of 3)",
@@ -857,6 +964,7 @@
       "picture": "8bf2ecc05d821b2e3ccfeaca3f4b0b54e21c7bce.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Impera Brigade Guard (1 of 4)",
@@ -865,6 +973,7 @@
       "picture": "48c332c81cd14f1743a3b9c5a20264e409c84d30.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Impera Brigade Guard (2 of 4)",
@@ -873,6 +982,7 @@
       "picture": "48c332c81cd14f1743a3b9c5a20264e409c84d30.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Novigrad (Gustfields)",
       "name": "Impera Brigade Guard (3 of 4)",
@@ -881,6 +991,7 @@
       "picture": "48c332c81cd14f1743a3b9c5a20264e409c84d30.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Novigrad (Grassy Knoll)",
       "name": "Impera Brigade Guard (4 of 4)",
@@ -889,6 +1000,7 @@
       "picture": "48c332c81cd14f1743a3b9c5a20264e409c84d30.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Skellige",
       "name": "Iorveth",
@@ -897,6 +1009,7 @@
       "picture": "78b3462090c641d30a74b6303c9bfa1b619e0689.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Isengrim Faoiltiarna",
@@ -905,6 +1018,7 @@
       "picture": "d81db28df09eaa1172c34627354a8c36e8df3540.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Novigrad",
       "name": "John Natalis",
@@ -913,6 +1027,7 @@
       "picture": "377ebfe4616a50a6141db5b37240078ef480a7ec.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Kaedweni Siege Expert (1 of 3)",
@@ -921,6 +1036,7 @@
       "picture": "75642181ba8d0b0ad5698e86b970f0504c3eb114.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Kaedweni Siege Expert (2 of 3)",
@@ -929,6 +1045,7 @@
       "picture": "75642181ba8d0b0ad5698e86b970f0504c3eb114.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Kaedweni Siege Expert (3 of 3)",
@@ -937,6 +1054,7 @@
       "picture": "75642181ba8d0b0ad5698e86b970f0504c3eb114.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Kayran",
@@ -945,6 +1063,7 @@
       "picture": "20d364cc224d358fea50d430065da7862a9e07e2.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Keira Metz",
@@ -953,6 +1072,7 @@
       "picture": "3464be628f13cae1d0397d7eaa8c1248127ab6aa.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Leshen",
@@ -961,6 +1081,7 @@
       "picture": "2d3106c32a084567c500776f957cc5c5beef60ef.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Letho of Gulet",
@@ -969,6 +1090,7 @@
       "picture": "011461393d2a69c3d4ddf9a5c80c245c9477f564.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Mahakaman Defender (1 of 5)",
@@ -977,6 +1099,7 @@
       "picture": "fb6c45be6ef0dd7d5c55a3a5e26d3bc5f83417e5.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Mahakaman Defender (2 of 5)",
@@ -985,6 +1108,7 @@
       "picture": "621d07c2af7a50165927100f6a050e1c8c7561d2.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad (Gustfields)",
       "name": "Mahakaman Defender (3 of 5)",
@@ -993,6 +1117,7 @@
       "picture": "935d47e8b553a2b00f8ed3b7582ec0d86adf3f58.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad (Oxenfurt)",
       "name": "Mahakaman Defender (4 of 5)",
@@ -1001,6 +1126,7 @@
       "picture": "a799bd0f150444e123482575791c43ea7f607b07.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Mahakaman Defender (5 of 5)",
@@ -1009,6 +1135,7 @@
       "picture": "79dad2c83ddc9375d319f58c165cf35b29d8d84c.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Menno Coehoorn",
@@ -1017,6 +1144,7 @@
       "picture": "8f7ad85e07107ed85fd5cf444ad274f07a9eb663.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad (Gustfields)",
       "name": "Milva",
@@ -1025,6 +1153,7 @@
       "picture": "850132e4a03464652531397612498829b5bfb7f7.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Morteisen",
@@ -1033,6 +1162,7 @@
       "picture": "1260a2307453cad288d81e682bd2e9c895696732.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Novigrad",
       "name": "Morvran Voorhis",
@@ -1041,6 +1171,7 @@
       "picture": "644f18f5dac34ef6599c3f4819ced02a2f5acbde.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Skellige",
       "name": "Mysterious Elf",
@@ -1049,6 +1180,7 @@
       "picture": "28af97275162697e4979b657d87f58e3fcfb11be.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Nausicaa Cavalry Rider (1 of 3)",
@@ -1057,6 +1189,7 @@
       "picture": "e0d66937ef08872b80aa46762df9967b7ea146a2.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Nausicaa Cavalry Rider (2 of 3)",
@@ -1065,6 +1198,7 @@
       "picture": "e0d66937ef08872b80aa46762df9967b7ea146a2.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Nausicaa Cavalry Rider (3 of 3)",
@@ -1073,6 +1207,7 @@
       "picture": "e0d66937ef08872b80aa46762df9967b7ea146a2.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Nekker (1 of 3)",
@@ -1081,6 +1216,7 @@
       "picture": "d1dc6c9c7879951be17f7dc216343cbcc517eb44.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Nekker (2 of 3)",
@@ -1089,6 +1225,7 @@
       "picture": "2860d37ee07062f2eae41f2b2a9896f5283cc1be.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Nekker (3 of 3)",
@@ -1097,6 +1234,7 @@
       "picture": "f09c33355270f8d81d47cc0c7b4defda5f9af822.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Random",
       "name": "Philippa Eilhart",
@@ -1105,6 +1243,7 @@
       "picture": "66c2e47d7208c31607bc4b6e7be3af3ea28cfa29.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Plague Maiden",
@@ -1113,6 +1252,7 @@
       "picture": "05d008c3837e338f572b08bdae78f94dfb4f88e0.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Poor Fucking Infantry (1 of 4)",
@@ -1121,6 +1261,7 @@
       "picture": "6cca0446e59d56f61edc7e596a8f6225704559d3.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Poor Fucking Infantry (2 of 4)",
@@ -1129,6 +1270,7 @@
       "picture": "6cca0446e59d56f61edc7e596a8f6225704559d3.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Velen",
       "name": "Poor Fucking Infantry (3 of 4)",
@@ -1137,6 +1279,7 @@
       "picture": "6cca0446e59d56f61edc7e596a8f6225704559d3.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Velen",
       "name": "Poor Fucking Infantry (4 of 4)",
@@ -1145,6 +1288,7 @@
       "picture": "6cca0446e59d56f61edc7e596a8f6225704559d3.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Prince Stennis",
@@ -1153,6 +1297,7 @@
       "picture": "0bc66bbc24e450e5e6606e1fde01de574a96999b.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Puttkammer",
@@ -1161,6 +1306,7 @@
       "picture": "07a11c4c3976378705a8bff36f9a298d7d08074b.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Rainfarn",
@@ -1169,6 +1315,7 @@
       "picture": "c48f34c37345981bfaa1668875a4f86bb2b4a745.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Redanian Foot Soldier (1 of 2)",
@@ -1177,6 +1324,7 @@
       "picture": "431cf3b357225896a3b5e523fa525a8e5607c177.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Redanian Foot Soldier (2 of 2)",
@@ -1185,6 +1333,7 @@
       "picture": "67219fb1467fa6d3ac11dd7ed62b689acae71eb9.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Random",
       "name": "Renuald aep Matsen",
@@ -1193,6 +1342,7 @@
       "picture": "16b6d103a9df0f7f33d33e07cc9403ef7f3501fa.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Riordain",
@@ -1201,6 +1351,7 @@
       "picture": "515d9e16838e75d44e15180d2932f6da9b4a6e46.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Random",
       "name": "Rotten Mangonel",
@@ -1209,6 +1360,7 @@
       "picture": "76b7d18012f97ceb88fe3bcc997b22e03610fae9.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Sabrina Glevissig",
@@ -1217,6 +1369,7 @@
       "picture": "5fe3f11c306468330e3fd072aae3177d0fbff4f3.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad (Gustfields)",
       "name": "Saesenthessis",
@@ -1225,6 +1378,7 @@
       "picture": "ad7681f10352b0155225dd188d3710821b04595a.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad (Grassy Knoll)",
       "name": "Scorch (1 of 3)",
@@ -1233,6 +1387,7 @@
       "picture": "a97e2602c5c29e5e7c62ba6e27215e2c68d29f9d.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Skellige",
       "name": "Scorch (2 of 3)",
@@ -1241,6 +1396,7 @@
       "picture": "a97e2602c5c29e5e7c62ba6e27215e2c68d29f9d.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Skellige",
       "name": "Scorch (3 of 3)",
@@ -1249,6 +1405,7 @@
       "picture": "a97e2602c5c29e5e7c62ba6e27215e2c68d29f9d.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Sheldon Skaggs",
@@ -1257,6 +1414,7 @@
       "picture": "ce7b7ddda8ca0df4f0274f084ad18ab56fe4788c.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Random",
       "name": "Shilard Fitz-Oesterlen",
@@ -1265,6 +1423,7 @@
       "picture": "90f5e30da7b11ff4b8eb90376c85159cdcf6234e.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Siege Engineer",
@@ -1273,6 +1432,7 @@
       "picture": "4e23c1e4b093b626eef6467dd8c9b0042bef1025.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Novigrad",
       "name": "Siege Technician",
@@ -1281,6 +1441,7 @@
       "picture": "994baafd5c63e68ae9dbc258e6d1c64c6a274d7e.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Random",
       "name": "Siege Tower",
@@ -1289,6 +1450,7 @@
       "picture": "4cc9a00a68ded99d45c07bbf672bc81b3fb2972d.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Siegfried of Denesle",
@@ -1297,6 +1459,7 @@
       "picture": "e27de900c422b08eb2809500e6d86fdd0b28fc60.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Velen",
       "name": "Sigismund Dijkstra",
@@ -1305,6 +1468,7 @@
       "picture": "5ac6d6b8b2f1f0c98005bbc887fbb49813558986.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Síle de Tansarville",
@@ -1313,6 +1477,7 @@
       "picture": "33b283f2f5285b4e091f16d7922fd31e6888be99.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Random",
       "name": "Stefan Skellen",
@@ -1321,6 +1486,7 @@
       "picture": "033fe3a5b74ee6b039f6180e1d34c7a43bf8bfba.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Sweers",
@@ -1329,6 +1495,7 @@
       "picture": "646167cfadbd20381917bbc367a500a33bf78562.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Skellige",
       "name": "Thaler",
@@ -1337,6 +1504,7 @@
       "picture": "315879e4b87f79e68cf63737a9b362f6d7448261.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Novigrad",
       "name": "Tibor Eggebracht",
@@ -1345,6 +1513,7 @@
       "picture": "b7c2f80dddd3f683565ebd7110f951c9e3a34696.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Base Deck",
       "name": "Torrential Rain (1 of 3)",
@@ -1353,6 +1522,7 @@
       "picture": "ea65b1ef351bda6c5862219e716db76cc86b35af.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Random",
       "name": "Torrential Rain (2 of 3)",
@@ -1361,6 +1531,7 @@
       "picture": "ea65b1ef351bda6c5862219e716db76cc86b35af.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Random",
       "name": "Torrential Rain (3 of 3)",
@@ -1369,6 +1540,7 @@
       "picture": "ea65b1ef351bda6c5862219e716db76cc86b35af.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Toruviel",
@@ -1377,6 +1549,7 @@
       "picture": "afeef85d6df88fde437833c60fff9c8128d496f0.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Trebuchet (1 of 2)",
@@ -1385,6 +1558,7 @@
       "picture": "d5acfb2bec8f89f63383204dc8a2f53c45a0bd30.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Trebuchet (2 of 2)",
@@ -1393,6 +1567,7 @@
       "picture": "8d496e2d92c00c4c80626180c45615883bd2a84b.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad",
       "name": "Triss Merigold",
@@ -1401,6 +1576,7 @@
       "picture": "2d93be802f31e4842c40f35d826d99c1f8205c30.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Novigrad (Gustfields)",
       "name": "Vampire: Bruxa",
@@ -1409,6 +1585,7 @@
       "picture": "b5de14523cfba4d726de77a267c4a276ca660f6a.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Vampire: Ekimmara",
@@ -1417,6 +1594,7 @@
       "picture": "5d71f9c6eab7c8f2aeab9075f7d751c5e7e85aae.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Vampire: Fleder",
@@ -1425,6 +1603,7 @@
       "picture": "d53d15f54a55e8fb0443d8dc0dd766ec620896f1.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Vampire: Garkain",
@@ -1433,6 +1612,7 @@
       "picture": "70f5d2b0b74e0fe19d0705d7a6cc26c8a8facaba.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Vampire: Katakan",
@@ -1441,6 +1621,7 @@
       "picture": "a71ede99132ebb9f2817799b53f3a65e379def86.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Random",
       "name": "Vanhemar",
@@ -1449,6 +1630,7 @@
       "picture": "95299a9668f0b9cc15b8b0edcfbe07f1df1829d6.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Random",
       "name": "Vattier de Rideaux",
@@ -1457,6 +1639,7 @@
       "picture": "8c4602dde73007fee304372a517d462a5a109320.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Velen",
       "name": "Vernon Roche",
@@ -1465,6 +1648,7 @@
       "picture": "f132abf5f0988e8370f87445298403db716f295e.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Ves",
@@ -1473,6 +1657,7 @@
       "picture": "4bbfcbebdfb5b85c3113a3f20b8a96dfe92c4ef4.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad",
       "name": "Vesemir",
@@ -1481,6 +1666,7 @@
       "picture": "608cf174aa387a10160fd61d9cfde88464cfb20b.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Random",
       "name": "Villentretenmerth",
@@ -1489,6 +1675,7 @@
       "picture": "30e655cf1542156ccde4458cc9aed4c902606819.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Random",
       "name": "Vreemde",
@@ -1497,6 +1684,7 @@
       "picture": "3c3d750ae431b505659b4318f02156a9fd27e226.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Random",
       "name": "Vrihedd Brigade Recruit",
@@ -1505,6 +1693,7 @@
       "picture": "ec23740e4261e98482fc0308f74b3abd266c9a60.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad (Oxenfurt)",
       "name": "Vrihedd Brigade Veteran (1 of 2)",
@@ -1513,6 +1702,7 @@
       "picture": "55ef98ddc2c06efbb2f662f3908c0138653a1d83.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Novigrad",
       "name": "Vrihedd Brigade Veteran (2 of 2)",
@@ -1521,6 +1711,7 @@
       "picture": "0eb1d8504bd37e27b7513c31f079b3b4e058b580.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Skellige",
       "name": "Werewolf",
@@ -1529,6 +1720,7 @@
       "picture": "8be19eb69bca6b227ddbfee082bde80b2b81b6ca.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Monsters",
       "territory": "Random",
       "name": "Wyvern",
@@ -1537,6 +1729,7 @@
       "picture": "8be19eb69bca6b227ddbfee082bde80b2b81b6ca.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Scoia'tael",
       "territory": "Skellige",
       "name": "Yaevinn",
@@ -1545,6 +1738,7 @@
       "picture": "684fea2670768c046109cc6f9e1f423d35394f74.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Northern Realms",
       "territory": "Base Deck",
       "name": "Yarpen Zigrin",
@@ -1553,6 +1747,7 @@
       "picture": "d5fd6cf5ca904e44d08ca50482f665f761c2b6e7.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "Novigrad (Oxenfurt)",
       "name": "Yennefer of Vengerberg",
@@ -1561,6 +1756,7 @@
       "picture": "f0b3cd4572ab10ababa2c292470bc64f65305ba9.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Novigrad (Grassy Knoll)",
       "name": "Young Emissary (1 of 2)",
@@ -1569,6 +1765,7 @@
       "picture": "5528529248e1f520356cafb997ee69a1f9cb88a6.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Novigrad (Gustfields)",
       "name": "Young Emissary (2 of 2)",
@@ -1577,6 +1774,7 @@
       "picture": "9eba10db3a74d7d7f3c94f002c13659807e14519.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Nilfgaard",
       "territory": "Velen",
       "name": "Zerrikanian Fire Scorpion",
@@ -1585,12 +1783,490 @@
       "picture": "9ae9371427be8d0aa17c7af00e6540ca9e7059a5.png"
     },
     {
+      "expansion": "Base game",
       "deck": "Neutral",
       "territory": "White Orchard",
       "name": "Zoltan Chivay",
       "type": "Win from Gwent Teacher",
       "details": "White Orchard Tavern, Aldert Geert OR found under the Hanged Man's Tree after prologue",
       "picture": "a10bad53f8102b7b4d502dfb78551c4cd2da44c3.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Neutral",
+      "territory": "Novigrad (Brunwich)",
+      "name": "Cow",
+      "type": "Loot",
+      "details": "Brunwich, Barn, Top floor",
+      "picture": "65ce2809bea61ff433f9b4ca07598a846491aad8.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Nilfgaard",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Emhyr var Emreis: Invader of the North",
+      "type": "Buy from Trader",
+      "details": "Circus Camp near Carsten, Merchant",
+      "picture": "316de6877c33c01b417f7aa3c5de8a9187d807b2.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Monsters",
+      "territory": "Novigrad (Brunwich)",
+      "name": "Eredin Bréacc Glas: The Treacherous",
+      "type": "Buy from Trader",
+      "details": "Upper Mill, Dulla kh'Amanni",
+      "picture": "b505e4932de0ed945a05b992138e0922734c7c8a.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Northern Realms",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Foltest: Son of Medell",
+      "type": "Buy from Trader",
+      "details": "Circus Camp near Carsten, Merchant",
+      "picture": "9ff01f6151f00b7608ef92595f7575f2de212a50.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Brunwich)",
+      "name": "Francesca Findabair: Hope of the Aen Seidhe",
+      "type": "Buy from Trader",
+      "details": "Upper Mill, Dulla kh'Amanni",
+      "picture": "f29b86527d141e30d45a6a0c3d062d034882a9cc.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Neutral",
+      "territory": "Novigrad (Oxenfurt)",
+      "name": "Gaunter O'Dimm",
+      "type": "Win from NPC",
+      "details": "Open Sesame!, Borsodi Brothers' Auction House, Robert Hilbert",
+      "picture": "05f24cc3459d1d50cc895b9f21fefb09d1a40510.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Neutral",
+      "territory": "Novigrad (Brunwich)",
+      "name": "Gaunter O'Dimm: Darkness (1 of 3)",
+      "type": "Buy from Trader",
+      "details": "Upper Mill, Dulla kh'Amanni",
+      "picture": "c1e546c0899b58bf6010f1d6159e2a30d7be15d3.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Neutral",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Gaunter O'Dimm: Darkness (2 of 3)",
+      "type": "Buy from Trader",
+      "details": "Circus Camp near Carsten, Merchant",
+      "picture": "c1e546c0899b58bf6010f1d6159e2a30d7be15d3.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Neutral",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Gaunter O'Dimm: Darkness (3 of 3)",
+      "type": "Buy from Trader",
+      "details": "Circus Camp near Carsten, Merchant",
+      "picture": "c1e546c0899b58bf6010f1d6159e2a30d7be15d3.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Neutral",
+      "territory": "Novigrad (Oxenfurt)",
+      "name": "Olgierd von Everec",
+      "type": "Win from NPC",
+      "details": "Shani OR top of Shani's Clinic in Oxenfurt",
+      "picture": "12d592661b2ec38db626a94a51b35d044c373521.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Scoia'tael",
+      "territory": "Novigrad (Gustfields)",
+      "name": "Schirrú",
+      "type": "Buy from Trader",
+      "details": "Circus Camp near Carsten, Merchant",
+      "picture": "ad7de60900c113b21f16261d99c64bec57cadadd.png"
+    },
+    {
+      "expansion": "Hearts of Stone",
+      "deck": "Monsters",
+      "territory": "Novigrad (Oxenfurt)",
+      "name": "Toad",
+      "type": "Win from NPC",
+      "details": "Olgierd von Everec OR on the table in The Alchemy inn",
+      "picture": "76d25628daa0c576ca6a3cbc8c0e782009cf7e0e.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Berserker",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "cfd9c93b45517c655789c55736616f3471aa33f2.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Birna Bran",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "6da6bbea0b8aacab02ce36aa7c2f077638026ee2.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Blueboy Lugos",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "3416bc409492dbb0b432b59904c0703ab44da460.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Cerys",
+      "type": "Win From NPC",
+      "details": "The Barrel and Bung Inn, Innkeep",
+      "picture": "3782deadc4c5e0d7249ab8a2bad25510cea7f087.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan an Craite Warrior",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "73f95fdc05ff9e0c8add594a05673e085231cdb7.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan Brokvar Archer (1 of 3)",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "cb3399e558a964247a964435b5b30b16173dd38e.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan Brokvar Archer (2 of 3)",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "cb3399e558a964247a964435b5b30b16173dd38e.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan Brokvar Archer (3 of 3)",
+      "type": "Win from NPC",
+      "details": "Castel Ravello Vineyard, Herbalist",
+      "picture": "cb3399e558a964247a964435b5b30b16173dd38e.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan Dimun Pirate",
+      "type": "Win From NPC",
+      "details": "Beauclair, Hauteville, Dupont & Sons, Merchant",
+      "picture": "6f380560bbf1e3ca93ce415f9c6f54ddde57fa38.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan Drummond Shield Maiden (1 of 3)",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "263d2d6498fe7b06e6e4a685a6845341396d140c.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan Drummond Shield Maiden (2 of 3)",
+      "type": "Win from NPC",
+      "details": "The Cockatrice Inn, Innkeep",
+      "picture": "263d2d6498fe7b06e6e4a685a6845341396d140c.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan Drummond Shield Maiden (3 of 3)",
+      "type": "Win from NPC",
+      "details": "Francollarts, Armorer",
+      "picture": "263d2d6498fe7b06e6e4a685a6845341396d140c.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan Heymaey Skald",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "c725d4ebfdfbae7b49c330b5ca9c7cd8a7a681ef.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Clan Tordarroch Armorsmith",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "e6d7c5217ad4a8feb52553308d7479f197348c60.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Crach an Craite",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "790c95571af93a2d63e9283bac8ba7c8726be32d.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Donar an Hindar",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "f3604042fd3605b5c52ff93fab9addcd1f44bb82.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Draig Bon-Dhu",
+      "type": "Win From NPC",
+      "details": "The Pheasantry, Innkeep",
+      "picture": "e664a2cafec72d98ef9b65bf0f594c3ef15479a0.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Ermion",
+      "type": "Win From NPC",
+      "details": "Francollarts, Innkeep",
+      "picture": "2d66b0bd57145188bb66834e78b76102fb693ea5.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Hjalmar",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "f3aa6c87987507d773c608d73038745304197349.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Holger Blackhand",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "21cd5940334eeaa7520865f6f391a4528e0055d8.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Kambi",
+      "type": "Win From NPC",
+      "details": "Francollarts, Innkeep",
+      "picture": "e752497b5851e3a56aa6b529ae6c6ce79f2367f7.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "King Bran",
+      "type": "Win From NPC",
+      "details": "Gwent: To Everything - Turn, Turn, Tournament!, Ducal Camerlengo in Beauclair",
+      "picture": "7662447d4ad7b4ab44ffe84a1ce08e863cd4451c.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Light Longship (1 of 3)",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "9ab8ed495e88c5e179d605cd948dba97c184e7b1.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Light Longship (2 of 3)",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "9ab8ed495e88c5e179d605cd948dba97c184e7b1.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Light Longship (3 of 3)",
+      "type": "Win from NPC",
+      "details": "Beauclair, Hauteville, Perfumery, Merchant",
+      "picture": "9ab8ed495e88c5e179d605cd948dba97c184e7b1.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Madman Lugos",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "ed0b7f9047918c383d2d34179d0cb5a03470f2c8.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Mardroeme (1 of 3)",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "fab82a3b0d57f5ed08a260fe87c5a8d3a82aa75b.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Mardroeme (2 of 3)",
+      "type": "Win from NPC",
+      "details": "Beauclair Port, The Belles of Beauclair, Madame Isabelle",
+      "picture": "fab82a3b0d57f5ed08a260fe87c5a8d3a82aa75b.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Mardroeme (3 of 3)",
+      "type": "Win from NPC",
+      "details": "Beauclair, Hauteville, Herb Store, Herbalist",
+      "picture": "fab82a3b0d57f5ed08a260fe87c5a8d3a82aa75b.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Olaf",
+      "type": "Win From NPC",
+      "details": "Beauclair, The Adder and Jewels Winery, Sommelier",
+      "picture": "5d8fd1ae02b16c16f49951ece45f9b14b13c8375.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Neutral",
+      "territory": "Toussaint",
+      "name": "Skellige Storm (1 of 3)",
+      "type": "Win From NPC",
+      "details": "Tourney Grounds, Armorer",
+      "picture": "2249c5f6faaac6584bff7b594642d26cf05e8df7.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Neutral",
+      "territory": "Toussaint",
+      "name": "Skellige Storm (2 of 3)",
+      "type": "Win From NPC",
+      "details": "Tourney Grounds, Barber",
+      "picture": "2249c5f6faaac6584bff7b594642d26cf05e8df7.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Neutral",
+      "territory": "Toussaint",
+      "name": "Skellige Storm (3 of 3)",
+      "type": "Win From NPC",
+      "details": "Beauclair Port, Butcher",
+      "picture": "2249c5f6faaac6584bff7b594642d26cf05e8df7.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Svanrige",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "77166dbbe5c4654902067e80c7c617d06cc38229.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Udalryk",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "399db0b136fdd44721ffee82348fc6ab0afa0738.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "War Longship (1 of 3)",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "6912bc7b5415e08d5591c3957f98d130f6383a4f.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "War Longship (2 of 3)",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "6912bc7b5415e08d5591c3957f98d130f6383a4f.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "War Longship (3 of 3)",
+      "type": "Win from NPC",
+      "details": "Tourney Grounds, Innkeep",
+      "picture": "6912bc7b5415e08d5591c3957f98d130f6383a4f.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Young Berserker (1 of 3)",
+      "type": "Base Deck",
+      "details": "Received from Count Monnier",
+      "picture": "17fc29a76dfc812d273aa5a83db1ab760410a8e9.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Young Berserker (2 of 3)",
+      "type": "Win from NPC",
+      "details": "Tourney Grounds, Blacksmith",
+      "picture": "17fc29a76dfc812d273aa5a83db1ab760410a8e9.png"
+    },
+    {
+      "expansion": "Blood and Wine",
+      "deck": "Skellige",
+      "territory": "Toussaint",
+      "name": "Young Berserker (3 of 3)",
+      "type": "Win from NPC",
+      "details": "Beauclair, Tailor's Workshop, Pierre",
+      "picture": "17fc29a76dfc812d273aa5a83db1ab760410a8e9.png"
     }
   ]
 }
