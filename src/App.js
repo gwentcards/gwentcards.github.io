@@ -104,6 +104,10 @@ class App extends React.Component {
         this.setFilter(field, '');
     }
 
+    clearAllFilters() {
+        this.setState({ filter: {} });
+    }
+
     setFilter(field, value) {
         this.setState(state => {
             return { filter: { ...state.filter, [field]: value } };
@@ -256,6 +260,7 @@ class App extends React.Component {
                     </div>
                     <div className="col-auto text-right">
                         Showing {filtered.length} of {totalCount} cards. Collected {totalCollected} ({App.percentage(totalCollected, totalCount)}%).
+                        <Button size="sm" className="ml-2" onClick={this.clearAllFilters.bind(this)}>Clear all filters</Button>
                     </div>
                 </div>
                 <div className="row mb-1">
