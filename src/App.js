@@ -15,13 +15,15 @@ import {
 import cards from './data/cards';
 import GithubMark from './assets/GitHub-Mark-32px.png';
 
+const defaultCopyButtonCaption = 'Copy page location';
+
 class App extends React.Component {
     constructor(props) {
         super(props);
 
         const hash = window.location.hash;
         const parsed = App.parseHash(cards.cards, hash) || {};
-        this.state = { checked: parsed, filter: {}, sort: { field: 'name', dir: 'asc' }, picture: null };
+        this.state = { checked: parsed, filter: {}, sort: { field: 'name', dir: 'asc' }, picture: null, copyButtonCaption: defaultCopyButtonCaption };
 
         this.isChecked = this.isChecked.bind(this);
         this.noop = this.noop.bind(this);
@@ -235,6 +237,21 @@ class App extends React.Component {
         this.setState({ picture: name });
     }
 
+    temporarilyChangeCopyButtonCaption(caption) {
+        const thiss = this;
+        this.setState({ copyButtonCaption: caption }, () => {
+            setTimeout(() => thiss.setState({ copyButtonCaption: defaultCopyButtonCaption }), 1500/*ms*/);
+        });
+    }
+
+    copyPageLocation() {
+        const thiss = this;
+        navigator.clipboard.writeText(window.location).then(
+            () => thiss.temporarilyChangeCopyButtonCaption("✅ Copied 👍"),
+            () => thiss.temporarilyChangeCopyButtonCaption("❌ Copy failed 👎"),
+        );
+    }
+
     render() {
         const f = this.state.filter;
         const filtered = this.filteredCards();
@@ -253,7 +270,7 @@ class App extends React.Component {
                 <div className="row no-gutters mb-2">
                     <div className="col">
                         {navigator && navigator.clipboard && navigator.clipboard.writeText &&
-                            <Button size="sm" className="mr-3" onClick={() => navigator.clipboard.writeText(window.location)} title="Copy page location to the clipboard, so you can save it or bookmark it">Copy page location</Button>
+                            <Button size="sm" className="mr-3 copy-page-location-button" onClick={this.copyPageLocation.bind(this)} title="Copy page location to the clipboard, so you can save it or bookmark it">{this.state.copyButtonCaption}</Button>
                         }
                         <Button size="sm" className="mr-1" onClick={this.checkAll.bind(this, true)}>Check all visible</Button>
                         <Button size="sm" onClick={this.checkAll.bind(this, false)}>Uncheck all visible</Button>
