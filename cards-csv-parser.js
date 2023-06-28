@@ -2,7 +2,7 @@ const fs = require('fs');
 const sha1 = require('js-sha1');
 const Papa = require('papaparse');
 
-module.exports.readCardsCsv = function(callback) {
+module.exports.readCardsCsv = function (callback) {
     fs.readFile('cards.csv', 'utf8', (err, data) => {
         console.log('Reading cards.csv');
         if (err) {
@@ -30,10 +30,11 @@ module.exports.readCardsCsv = function(callback) {
         const rows = results.data
             .filter((row, idx) => idx > 0) // Skip header
             .map(row => {
-                const [deck, territory, name, type, details, pictureUrl] = row;
+                const [expansion, deck, territory, name, type, details, pictureUrl] = row;
                 const pictureSource = pictureUrl.trim();
                 const pictureTarget = sha1(pictureSource.trim()) + '.png';
                 return {
+                    expansion: expansion.trim(),
                     deck: deck.trim(),
                     territory: territory.trim(),
                     name: name.trim(),

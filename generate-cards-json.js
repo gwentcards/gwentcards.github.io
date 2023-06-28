@@ -11,15 +11,17 @@ parser.readCardsCsv(data => {
     const arr = [];
     for (const row of data) {
         arr.push({
+            expansion: row.expansion,
             deck: row.deck,
             territory: row.territory,
             name: row.name,
             type: row.type,
             details: row.details,
-            picture: row.pictureTarget});
+            picture: row.pictureTarget
+        });
     }
 
-    const json = JSON.stringify({cards: arr}, null, 2);
+    const json = JSON.stringify({ cards: arr }, null, 2);
     fs.writeFile('src/data/cards.json', json, err => {
         if (err) {
             console.error('Unable to write JSON data to src/data/cards.json', err);
