@@ -287,7 +287,7 @@ class App extends React.Component {
                             {App.progress(totalCount, deckCounts, 'Monsters', 'danger')}
                             {App.progress(totalCount, deckCounts, 'Northern Realms', 'primary')}
                             {App.progress(totalCount, deckCounts, 'Scoia\'tael', 'success')}
-                            {App.progress(totalCount, deckCounts, 'Skellige', 'info')}
+                            {App.progress(totalCount, deckCounts, 'Skellige', 'skellige')}
                             {App.progress(totalCount, deckCounts, 'Neutral', 'secondary')}
                         </Progress>
                     </div>
