@@ -1886,7 +1886,7 @@
       "deck": "Scoia'tael",
       "territory": "Novigrad (Gustfields)",
       "name": "Schirrú",
-      "type": "Buy from Trader",
+      "type": "Win from NPC",
       "details": "Circus Camp near Carsten, Merchant",
       "picture": "ad7de60900c113b21f16261d99c64bec57cadadd.png"
     },
@@ -2094,7 +2094,7 @@
       "territory": "Toussaint",
       "name": "King Bran",
       "type": "Win From NPC",
-      "details": "Gwent: To Everything - Turn, Turn, Tournament!, Ducal Camerlengo in Beauclair",
+      "details": "Ducal Camerlengo in Beauclair",
       "picture": "7662447d4ad7b4ab44ffe84a1ce08e863cd4451c.png"
     },
     {
