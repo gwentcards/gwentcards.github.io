@@ -36,9 +36,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "js-sha1": "^0.7.0",
-    "papaparse": "^5.4.1",
+    "papaparse": "^5.5.3",
     "react-scripts": "^5.0.1"
   }
 }
