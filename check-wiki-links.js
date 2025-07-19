@@ -9,6 +9,7 @@ parser.readCardsCsv(data => {
         const wiki = `https://witcher.fandom.com/wiki/${underscored}_(gwent_card)`;
 
         https.request(wiki, {method: 'HEAD'}, r => {
+            r.resume() // Make sure to consume the response body, so the script won't hang
             if (r.statusCode !== 200) {
                 console.error(`${r.statusCode} ${name} ${wiki}`);
             }
@@ -16,5 +17,5 @@ parser.readCardsCsv(data => {
             console.error(`Error ${name} ${wiki}`, err);
         }).end();
     }
-    console.log(`Check of ${data.length} Wiki links initiated`)
+    console.log(`Check of ${data.length} Wiki links initiated; successful if no errors are printed`)
 });

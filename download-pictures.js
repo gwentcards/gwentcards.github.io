@@ -23,9 +23,9 @@ parser.readCardsCsv(data => {
             response.pipe(file);
             file.on('finish', () => file.close());
         }).on('error', err => { // Handle errors
-            console.error(`Error downloading ${picture}`, err);
+            console.error(`Error downloading ${pictureSource}`, err);
             fs.unlink(filename); // Delete the file async. (But we don't check the result)
         });
     }
-    console.log(`Download of ${data.length} pictures initiated`)
+    console.log(`Download of ${data.length} pictures initiated; successful if no errors are printed`)
 });

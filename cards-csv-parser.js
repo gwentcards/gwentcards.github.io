@@ -47,7 +47,6 @@ module.exports.readCardsCsv = function (callback) {
 
         console.log(`Processed ${rows.length} rows`);
 
-        //const expansionSorting = { 'Base game': 0, 'Hearts of Stone': 1, 'Blood and Wine': 2 };
         const expansionSorting = ['Base game', 'Hearts of Stone', 'Blood and Wine'];
         rows.sort((l, r) => {
             if (l.expansion === r.expansion) {
